@@ -1,11 +1,11 @@
 package scaa.wardrobe.category;
 
 public enum Size {
-    XTRASMALL("extra small"),
-    SMALL("small"),
-    MEDIUM("medium"),
-    LARGE("large"),
-    XTRALARGE("extra large");
+    XTRASMALL("EXTRA SMALL"),
+    SMALL("SMALL"),
+    MEDIUM("MEDIUM"),
+    LARGE("LARGE"),
+    XTRALARGE("EXTRA LARGE");
 
     private String value;
 

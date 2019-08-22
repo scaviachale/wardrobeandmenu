@@ -1,4 +1,4 @@
-package scaa.wardrobe.model.hats;
+package scaa.wardrobe.model.cloth;
 
 import scaa.wardrobe.category.Color;
 import scaa.wardrobe.category.Status;
@@ -12,14 +12,14 @@ import java.util.Date;
 
 @Entity
 @Table(uniqueConstraints = @UniqueConstraint(columnNames = "hatnumber"))
-public class Hat {
+public class Cloth {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private long hatId;
+    private long clothId;
 
     @NotNull(message = "Hat number can't be null")
-    private String hatNumber;
+    private String clothNumber;
 
     @Size(min = 3, max = 100)
     @NotNull(message = "Hat name can't be empty")
@@ -38,11 +38,11 @@ public class Hat {
     @PastOrPresent
     private Date dateRemoved;
 
-    public Hat() {
+    public Cloth() {
     }
 
-    public Hat(@NotNull(message = "Hat number can't be null") String hatNumber, @Size(min = 3, max = 100) @NotNull(message = "Hat name can't be empty") String name, Type type, Status status, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
-        this.hatNumber = hatNumber;
+    public Cloth(@NotNull(message = "Hat number can't be null") String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Hat name can't be empty") String name, Type type, Status status, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
+        this.clothNumber = clothNumber;
         this.name = name;
         this.type = type;
         this.status = status;
@@ -51,20 +51,20 @@ public class Hat {
         this.dateRemoved = dateRemoved;
     }
 
-    public long getHatId() {
-        return hatId;
+    public long getClothId() {
+        return clothId;
     }
 
-    public void setHatId(long hatId) {
-        this.hatId = hatId;
+    public void setClothId(long clothId) {
+        this.clothId = clothId;
     }
 
-    public String getHatNumber() {
-        return hatNumber;
+    public String getClothNumber() {
+        return clothNumber;
     }
 
-    public void setHatNumber(String hatNumber) {
-        this.hatNumber = hatNumber;
+    public void setClothNumber(String clothNumber) {
+        this.clothNumber = clothNumber;
     }
 
     public String getName() {
@@ -118,18 +118,18 @@ public class Hat {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Hat)) return false;
+        if (!(o instanceof Cloth)) return false;
 
-        Hat hat = (Hat) o;
+        Cloth cloth = (Cloth) o;
 
-        if (hatId != hat.hatId) return false;
-        return hatNumber != null ? hatNumber.equals(hat.hatNumber) : hat.hatNumber == null;
+        if (clothId != cloth.clothId) return false;
+        return clothNumber != null ? clothNumber.equals(cloth.clothNumber) : cloth.clothNumber == null;
     }
 
     @Override
     public int hashCode() {
-        int result = (int) (hatId ^ (hatId >>> 32));
-        result = 31 * result + (hatNumber != null ? hatNumber.hashCode() : 0);
+        int result = (int) (clothId ^ (clothId >>> 32));
+        result = 31 * result + (clothNumber != null ? clothNumber.hashCode() : 0);
         return result;
     }
 }

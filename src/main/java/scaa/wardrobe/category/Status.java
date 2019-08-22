@@ -1,8 +1,8 @@
 package scaa.wardrobe.category;
 
 public enum Status {
-    NEW("new"),
-    OLD("old"),
+    NEW("NEW"),
+    OLD("OLD"),
     ;
 
     private String value;

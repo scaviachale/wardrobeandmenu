@@ -1,11 +1,11 @@
 package scaa.wardrobe.category;
 
 public enum Color {
-    BLUE("blue"),
-    BLACK("black"),
-    BROWN("brown"),
-    RED("red"),
-    SCOTCH("scotch");
+    BLUE("BLUE"),
+    BLACK("BLACK"),
+    BROWN("BROWN"),
+    RED("RED"),
+    SCOTCH("SCOTCH");
 
     private String value;
 
