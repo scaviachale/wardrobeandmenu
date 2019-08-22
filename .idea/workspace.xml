@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Type.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/hats/Cap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/hats/Hat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/cloth/Cloth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/hats/Woolen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/READ_ME/HTML5WebTemplates.co.uk.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/READ_ME/PLEASE READ.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/READ_ME/Remove the footer link.URL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/cloth/Cloth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566471391302</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ui/adding html features">
+      <created>1566480477641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566480477641</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wardrobe/master" />
-    <option name="LAST_COMMIT_MESSAGE" value="wardrobe/master" />
+    <MESSAGE value="ui/adding html features" />
+    <option name="LAST_COMMIT_MESSAGE" value="ui/adding html features" />
   </component>
 </project>

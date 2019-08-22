@@ -1,4 +1,4 @@
-package scaa.wardrobe.model.cloth;
+package scaa.wardrobe.model;
 
 import scaa.wardrobe.category.Color;
 import scaa.wardrobe.category.Status;
