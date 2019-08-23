@@ -9,11 +9,13 @@ n
 .src/main/java/scaa/wardrobe/category/Type.java,e\5\e5ad70ecb7fef0782aeba4d04d2f9eec8da529a8
 _
 /src/main/java/scaa/wardrobe/category/Color.java,a\4\a4825b26b000eb5f6c487e18ab60d8ab57d833db
-_
-/src/main/java/scaa/wardrobe/model/hats/Cap.java,3\5\352da0b22100cffb63452f8f9ac15db7aa35032c
 h
 8src/main/java/scaa/wardrobe/service/WardrobeService.java,f\5\f520d328f91626daf043dedec2a6c5b9b0246db8
 `
 0src/main/java/scaa/wardrobe/category/Status.java,f\9\f9968e168a9d094db6675f68fa677c844840aa9c
-_
-/src/main/java/scaa/wardrobe/model/hats/Hat.java,5\a\5a71720d9bb617418b802d65292f492f4d70c35f
+e
+5src/main/resources/templates/textured_blue/index.html,a\3\a305c8854367248a7ac204da506c0e5f5de7b40e
+\
+,src/main/java/scaa/wardrobe/model/Cloth.java,5\2\5234f374a214f0911a40dfc2eedb487c0dde0a01
+j
+:src/main/resources/templates/textured_blue/style/style.css,c\f\cf629ded0faec6b6ecef91ac3825cf495fe3ee44

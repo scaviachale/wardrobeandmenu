@@ -136,7 +136,7 @@ ol li
 { width: 900px;
   height: 72px;
   padding: 0;
-  background: #1293EE;} 
+  background: #1293EE;}
 
 ul#menu, ul#menu li
 { float: left;
@@ -169,6 +169,16 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   margin: 0 auto 0 auto;
   padding: 20px 24px 20px 37px;
   background: #FFF;} 
+
+.overview
+{
+ text-align: center;
+  width: 23%;
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 .sidebar
 { float: right;
