@@ -13,9 +13,5 @@ h
 8src/main/java/scaa/wardrobe/service/WardrobeService.java,f\5\f520d328f91626daf043dedec2a6c5b9b0246db8
 `
 0src/main/java/scaa/wardrobe/category/Status.java,f\9\f9968e168a9d094db6675f68fa677c844840aa9c
-e
-5src/main/resources/templates/textured_blue/index.html,a\3\a305c8854367248a7ac204da506c0e5f5de7b40e
 \
 ,src/main/java/scaa/wardrobe/model/Cloth.java,5\2\5234f374a214f0911a40dfc2eedb487c0dde0a01
-j
-:src/main/resources/templates/textured_blue/style/style.css,c\f\cf629ded0faec6b6ecef91ac3825cf495fe3ee44

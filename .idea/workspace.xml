@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/352da0b22100cffb63452f8f9ac15db7aa35032c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a71720d9bb617418b802d65292f492f4d70c35f" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/another_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/graphic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/link.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/style.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566481200691</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ui/adding html features">
+      <created>1566569379951</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566569379951</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
