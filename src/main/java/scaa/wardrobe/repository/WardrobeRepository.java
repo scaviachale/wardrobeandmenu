@@ -1,4 +1,4 @@
 package scaa.wardrobe.repository;
 
-public class WarbrobeRepository {
+public class WardrobeRepository {
 }

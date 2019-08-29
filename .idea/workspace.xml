@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/addnew.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/clothes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WarbrobeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/addnew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/another_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/another_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/examples.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +27,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1PMe7FlrT6Qjl2aSOaMFUVaQVPs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -37,6 +54,9 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\mylearning\wardrobeandmenu\src\main\resources\templates\wardrobe\scaa" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="scaa.wardrobe.model.hats" />
     </key>
@@ -106,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566569379951</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ui/adding html features">
+      <created>1567058948075</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567058948075</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
