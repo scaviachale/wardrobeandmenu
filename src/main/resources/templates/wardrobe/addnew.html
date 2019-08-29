@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Scavia's Wardrobe</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="search">
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text"
+                               style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
+                               name="search_field" placeholder="Enter keywords"/>
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
+                               src="style/search.png" alt="Search" title="Search"/>
+                    </p>
+                </form>
+            </div>
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.html">Scavia's <span class="logo_colour">Wardrobe</span></a></h1>
+                <h2>Simple. Scavia's. Wardrobe Manager.</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Overview</a></li>
+                <li class="selected"><a href="clothes.html">Clothes</a></li>
+                <li><a href="page.html">Gadgets</a></li>
+                <li><a href="another_page.html">Propeties</a></li>
+                <li><a href="contact.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="site_content">
+        <div class="sidebar">
+           <br/><br/><br/><br/>
+            <p><img src="style/scaa.jpg" alt="Clothes"
+                    style="border-radius: 50%;border: 5px solid #162129; width:95%;height:170px;"></p>
+            <p></p>
+        </div>
+
+        <div id="content">
+            <h2>Add Clothing</h2>
+            <form action="#" method="post">
+                <div class="form_settings">
+                    <p><span>Name</span><input type="text" name="name" value=""/></p>
+                    <p><span>Type</span><select id="type" name="name">
+                        <option value="1">Example 1</option>
+                        <option value="2">Example 2</option>
+                    </select></p>
+                    <p><span>Color</span><select id="color" name="name">
+                        <option value="1">Example 1</option>
+                        <option value="2">Example 2</option>
+                    </select></p>
+                    <p><span>Status</span><select id="status" name="name">
+                        <option value="1">Example 1</option>
+                        <option value="2">Example 2</option>
+                    </select></p>
+                    <p><span>Date received</span><input type="date" name="name" value=""/></p>
+                    <p><span>Date removed</span><input type="date" name="name" value=""/></p>
+                    <p><span>Checkbox example</span><input class="checkbox" type="checkbox" name="name" value=""/></p>
+                    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name"
+                                                                           value="save"/></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a
+        href="#">CHARLES</a> | <a
+        href="#">MHLANGA</a>
+</div>
+</div>
+</body>
+</html>

@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/addnew.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/clothes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/another_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/examples.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/graphic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/textured_blue/style/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +18,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,8 +26,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1PMe7FlrT6Qjl2aSOaMFUVaQVPs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.52281517" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
