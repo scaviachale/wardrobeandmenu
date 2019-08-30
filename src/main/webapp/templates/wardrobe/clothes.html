@@ -6,7 +6,7 @@
     <meta name="description" content="website description"/>
     <meta name="keywords" content="website keywords, website keywords"/>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
-    <link rel="stylesheet" type="text/css" href="style/style.css" title="style"/>
+    <link th:href="@{/templates/wardrobe/style/style.css}" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                                style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
                                name="search_field" placeholder="Enter keywords"/>
                         <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
-                               src="style/search.png" alt="Search" title="Search"/>
+                               th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
                     </p>
                 </form>
             </div>
@@ -34,7 +34,7 @@
             <ul id="menu">
                 <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
                 <li ><a href="/wardrobeandmenu/">Overview</a></li>
-                <li class="selected"><a href="clothes.html">Clothes</a></li>
+                <li class="selected"><a href="/wardrobeandmenu/clothes">Clothes</a></li>
                 <li><a href="page.html">Gadgets</a></li>
                 <li><a href="another_page.html">Propeties</a></li>
                 <li><a href="contact.html">Reports</a></li>
@@ -45,7 +45,7 @@
 
         <div class="overview">
             <h1>Shirts</h1>
-            <img src="style/shirt.jpg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/shirt.jpg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -55,7 +55,7 @@
 
         <div class="overview">
             <h1>Shoes</h1>
-            <img src="style/shoe.jpeg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/shoe.jpeg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%; height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -64,7 +64,7 @@
         </div>
         <div class="overview">
             <h1>Jackets</h1>
-            <img src="style/jackets.png" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/jackets.png}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -73,7 +73,7 @@
         </div>
         <div class="overview">
             <h1>T-shirts</h1>
-            <img src="style/tshirts.jpg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/tshirts.jpg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -82,7 +82,7 @@
         </div>
         <div class="overview">
             <h1>Socks</h1>
-            <img src="style/socks.png" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/socks.png}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -91,7 +91,7 @@
         </div>
         <div class="overview">
             <h1>Jeans</h1>
-            <img src="style/jeans.png" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/jeans.png}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -100,7 +100,7 @@
         </div>
         <div class="overview">
             <h1>Hats</h1>
-            <img src="style/hats.jpg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/hats.jpg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -109,7 +109,7 @@
         </div>
         <div class="overview">
             <h1>Jerseys</h1>
-            <img src="style/jersey.png" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/jersey.png}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -118,7 +118,7 @@
         </div>
         <div class="overview">
             <h1>Suits</h1>
-            <img src="style/suit.png" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/suit.png}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -127,7 +127,7 @@
         </div>
         <div class="overview">
             <h1>Nightwear</h1>
-            <img src="style/nightt.jpg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/nightt.jpg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -136,7 +136,7 @@
         </div>
         <div class="overview">
             <h1>Underwear</h1>
-            <img src="style/underwear.jpg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/underwear.jpg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>
@@ -145,7 +145,7 @@
         </div>
         <div class="overview">
             <h1>Utilities</h1>
-            <img src="style/shavers.jpg" alt="Clothes"
+            <img th:src="@{/templates/wardrobe/style/shavers.jpg}" alt="Clothes"
                  style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
             <div class="popup">
                 <br/><hr/><br/>

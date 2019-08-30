@@ -21,4 +21,9 @@ public class WardrobeController {
         model.addAttribute("wardrobe", new Cloth());
         return "/addnew";
     }
+
+    @GetMapping(value = "/clothes")
+    public ModelAndView clothesMenu() {
+        return new ModelAndView("clothes");
+    }
 }

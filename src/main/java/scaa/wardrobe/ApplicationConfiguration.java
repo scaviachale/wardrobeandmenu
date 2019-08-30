@@ -3,16 +3,14 @@ package scaa.wardrobe;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.ViewResolver;
+import org.springframework.context.annotation.Description;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
-import org.thymeleaf.templateresolver.ITemplateResolver;
-import scaa.wardrobe.controller.WardrobeController;
-import scaa.wardrobe.repository.WardrobeRepository;
-import scaa.wardrobe.service.WardrobeService;
+import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
+
+import javax.servlet.ServletContext;
 
 @Configuration
 @EnableWebMvc
@@ -20,9 +18,10 @@ import scaa.wardrobe.service.WardrobeService;
 public class ApplicationConfiguration {
 
     @Bean
-    public ITemplateResolver templateResolver() {
-        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-        templateResolver.setPrefix("/wardrobeandmenu/");
+    @Description("Thymeleaf Template Resolver")
+    public ServletContextTemplateResolver templateResolver(ServletContext servletContext) {
+        ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver(servletContext);
+        templateResolver.setPrefix("/templates/wardrobe/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode("HTML5");
 
@@ -30,19 +29,28 @@ public class ApplicationConfiguration {
     }
 
     @Bean
-    public SpringTemplateEngine templateEngine() {
+    @Description("Thymeleaf Template Engine")
+    public SpringTemplateEngine templateEngine(ServletContext servletContext) {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        templateEngine.setTemplateResolver(templateResolver());
-
+        templateEngine.setTemplateResolver(templateResolver(servletContext));
+        templateEngine.setTemplateEngineMessageSource(messageSource());
         return templateEngine;
     }
 
     @Bean
-    public ViewResolver viewResolver() {
+    @Description("Thymeleaf View Resolver")
+    public ThymeleafViewResolver viewResolver(ServletContext servletContext) {
         ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
-        viewResolver.setTemplateEngine(templateEngine());
+        viewResolver.setTemplateEngine(templateEngine(servletContext));
         viewResolver.setOrder(1);
-
         return viewResolver;
+    }
+
+    @Bean
+    @Description("Spring Message Resolver")
+    public ResourceBundleMessageSource messageSource() {
+        ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
+        messageSource.setBasename("messages");
+        return messageSource;
     }
 }
