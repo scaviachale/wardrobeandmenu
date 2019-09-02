@@ -2,92 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa45cd8f2685938502511d55a7833a95926e94d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b7f1d04e3f03decfe1a7f7ef7efb18c9d0e53c6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99938615607c52238352f372e04e7cbbf2f75c4c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5be29a69202d6c08c6b1faa4e2d399388de7f0c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9200026379b4d5e880b1efe32b1c7c6a9f4bdbe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/AddResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/JpaConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/clothes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/scaa/another_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/scaa/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/scaa/examples.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/scaa/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/RW02950C_MUL_N1_0617.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/RW03150C_MUL_N1_1115.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/graphic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/hats.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/jackets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/jeans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/jersey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/link.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/nightt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/rack.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/scaa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/shavers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/shirt.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/shoe.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/socks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/suit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/tshirts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/underwear.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeControllerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/GenerateClothNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepositoryInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa45cd8f2685938502511d55a7833a95926e94d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b7f1d04e3f03decfe1a7f7ef7efb18c9d0e53c6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99938615607c52238352f372e04e7cbbf2f75c4c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5be29a69202d6c08c6b1faa4e2d399388de7f0c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9200026379b4d5e880b1efe32b1c7c6a9f4bdbe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/addnew.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/clothes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/another_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/contact.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/examples.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/scaa/page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/0778ed7bd5e9579a2ba4c67c7d52f394.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/Jeans-PNG-Pic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/RW02950C_MUL_N1_0617.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/RW03150C_MUL_N1_1115.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/cap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/graphic.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/hats.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/header.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/jackets.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/jeans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/jersey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/link.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/nightt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/rack.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/scaa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/shavers.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/shirt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/shoe.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/socks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/suit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/suitt.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/suuit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/tshirts.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/wardrobe/style/underwear.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +38,7 @@
       <list>
         <option value="Enum" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -216,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567090612869</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ui/adding html features and spring configs">
+      <created>1567168268297</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1567168268297</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

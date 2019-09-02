@@ -36,7 +36,7 @@
                 <li><a href="/wardrobeandmenu/">Overview</a></li>
                 <li class="selected"><a href="/wardrobeandmenu/clothes">Clothes</a></li>
                 <li><a href="page.html">Gadgets</a></li>
-                <li><a href="another_page.html">Propeties</a></li>
+                <li><a href="another_page.html">What's Up Today</a></li>
                 <li><a href="contact.html">Reports</a></li>
             </ul>
         </div>
@@ -44,32 +44,33 @@
 
     <div id="site_content">
         <div class="sidebar">
-           <br/><br/><br/><br/>
-            <p><img  th:src="@{/templates/wardrobe/style/scaa.jpg}" alt="Clothes"
+            <br/><br/><br/><br/>
+            <p><img th:src="@{/templates/wardrobe/style/scaa.jpg}" alt="Clothes"
                     style="border-radius: 50%;border: 5px solid #162129; width:95%;height:170px;"></p>
             <p></p>
         </div>
+        <div class="container"></div>
 
         <div id="content">
             <h2>Add Clothing</h2>
-            <form action="#" method="post">
+            <form th:action="@{/savecloth}" th:object="${Cloth}" method="post">
                 <div class="form_settings">
                     <p><span>Name</span><input type="text" name="name" value=""/></p>
-                    <p><span>Type</span><select id="type" name="name">
-                        <option value="1">Example 1</option>
-                        <option value="2">Example 2</option>
+                    <p><span>Type</span><select id="type" name="type">
+                        <option th:each="typeOption : ${T(scaa.wardrobe.category.Type).values()}" th:value="${typeOption}" th:text="${typeOption.value}"></option>
                     </select></p>
-                    <p><span>Color</span><select id="color" name="name">
-                        <option value="1">Example 1</option>
-                        <option value="2">Example 2</option>
+                    <p><span>Color</span><select id="color" name="color">
+                        <option th:each="colorOption : ${T(scaa.wardrobe.category.Color).values()}" th:value="${colorOption}" th:text="${colorOption.value}"></option>
                     </select></p>
-                    <p><span>Status</span><select id="status" name="name">
-                        <option value="1">Example 1</option>
-                        <option value="2">Example 2</option>
+                    <p><span>Color</span><select id="size" name="size">
+                        <option th:each="sizeOption : ${T(scaa.wardrobe.category.Size).values()}" th:value="${sizeOption}" th:text="${sizeOption.value}"></option>
+                    </select></p>
+                    <p><span>Status</span><select id="status" name="status">
+                        <option th:each="statusOption : ${T(scaa.wardrobe.category.Status).values()}" th:value="${statusOption}" th:text="${statusOption.value}"></option>
                     </select></p>
                     <p><span>Date received</span><input type="date" name="name" value=""/></p>
                     <p><span>Date removed</span><input type="date" name="name" value=""/></p>
-                    <p><span>Checkbox example</span><input class="checkbox" type="checkbox" name="name" value=""/></p>
+                    <p><span>Checkbox</span><input class="checkbox" type="checkbox" name="name" value=""/></p>
                     <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name"
                                                                            value="save"/></p>
                 </div>
