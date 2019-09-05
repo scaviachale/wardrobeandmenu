@@ -2,20 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8198acc993df358eb02d1ec846af4686a69a6ffc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95b8f4e25731ef774556083b4e3f3d95da017840" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9d2ee12258901d8198422a02ad1f967bdcbcc41" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5238fdfc2b75a82a47bab6537bb814876adc5f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5238fdfc2b75a82a47bab6537bb814876adc5f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa45cd8f2685938502511d55a7833a95926e94d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b7f1d04e3f03decfe1a7f7ef7efb18c9d0e53c6" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99938615607c52238352f372e04e7cbbf2f75c4c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5be29a69202d6c08c6b1faa4e2d399388de7f0c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9200026379b4d5e880b1efe32b1c7c6a9f4bdbe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/JpaConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/ClothSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/WardrobeUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepositoryInterface.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/EmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567424139093</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ui/adding html features and spring configs">
+      <created>1567432221841</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1567432221841</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

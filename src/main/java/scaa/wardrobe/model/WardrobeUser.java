@@ -1,17 +1,29 @@
 package scaa.wardrobe.model;
 
-public class User {
+import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
+@Entity
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
+public class WardrobeUser {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
+    @Size(min = 5, max = 30)
     private String username;
 
+    @NotEmpty
+    @Email
     private String email;
 
-    public User() {
+    public WardrobeUser() {
     }
 
-    public User(long id, String username, String email) {
+    public WardrobeUser(long id, String username, String email) {
         this.id = id;
         this.username = username;
         this.email = email;
@@ -44,12 +56,12 @@ public class User {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof User)) return false;
+        if (!(o instanceof WardrobeUser)) return false;
 
-        User user = (User) o;
+        WardrobeUser wardrobeUser = (WardrobeUser) o;
 
-        if (getId() != user.getId()) return false;
-        return getEmail().equals(user.getEmail());
+        if (getId() != wardrobeUser.getId()) return false;
+        return getEmail().equals(wardrobeUser.getEmail());
     }
 
     @Override

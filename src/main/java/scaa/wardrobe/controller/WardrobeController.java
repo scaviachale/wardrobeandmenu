@@ -3,6 +3,7 @@ package scaa.wardrobe.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import scaa.wardrobe.model.Cloth;
 import scaa.wardrobe.service.WardrobeServiceInterface;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping(path = "/")
@@ -35,8 +38,11 @@ public class WardrobeController implements WardrobeControllerInterface{
     }
 
     @PostMapping(value = "/savecloth")
-    public String saveClothing(@ModelAttribute("cloth") Cloth cloth) {
+    public String saveClothing(@ModelAttribute("cloth") @Valid Cloth cloth, BindingResult bindingResult) {
+        if(bindingResult.hasErrors()){
+            return "/addnew";
+        }
         wardrobeServiceInterface.saveClothing(cloth);
-        return null;
+        return "/success";
     }
 }

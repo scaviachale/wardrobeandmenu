@@ -1,5 +1,6 @@
 package scaa.wardrobe.model;
 
+import scaa.wardrobe.category.ClothSize;
 import scaa.wardrobe.category.Color;
 import scaa.wardrobe.category.Status;
 import scaa.wardrobe.category.Type;
@@ -11,7 +12,7 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = "hatnumber"))
+@Table(uniqueConstraints = @UniqueConstraint(columnNames = "clothnumber"))
 public class Cloth {
 
     @Id
@@ -29,6 +30,8 @@ public class Cloth {
 
     private Status status;
 
+    private ClothSize size;
+
     private Color color;
 
     @NotNull(message = "Date bought is required")
@@ -41,11 +44,12 @@ public class Cloth {
     public Cloth() {
     }
 
-    public Cloth(@NotNull(message = "Hat number can't be null") String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Hat name can't be empty") String name, Type type, Status status, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
+    public Cloth(@NotNull(message = "Hat number can't be null") String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Hat name can't be empty") String name, Type type, Status status, ClothSize size, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
         this.clothNumber = clothNumber;
         this.name = name;
         this.type = type;
         this.status = status;
+        this.size = size;
         this.color = color;
         this.dateReceived = dateReceived;
         this.dateRemoved = dateRemoved;
@@ -113,6 +117,14 @@ public class Cloth {
 
     public void setDateRemoved(Date dateRemoved) {
         this.dateRemoved = dateRemoved;
+    }
+
+    public ClothSize getSize() {
+        return size;
+    }
+
+    public void setSize(ClothSize size) {
+        this.size = size;
     }
 
     @Override

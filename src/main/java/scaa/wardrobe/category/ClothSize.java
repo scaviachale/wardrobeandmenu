@@ -1,6 +1,6 @@
 package scaa.wardrobe.category;
 
-public enum Size {
+public enum ClothSize {
     XTRASMALL("EXTRA SMALL"),
     SMALL("SMALL"),
     MEDIUM("MEDIUM"),
@@ -9,7 +9,7 @@ public enum Size {
 
     private String value;
 
-    Size(String value) {
+    ClothSize(String value) {
         this.value = value;
     }
 

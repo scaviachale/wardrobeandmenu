@@ -6,7 +6,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 import scaa.wardrobe.model.Cloth;
 import scaa.wardrobe.model.GenerateClothNumber;
-import scaa.wardrobe.repository.WardrobeRepositoryInterface;
+import scaa.wardrobe.repository.WardrobeRepository;
 
 @Service
 @Transactional
@@ -14,15 +14,12 @@ import scaa.wardrobe.repository.WardrobeRepositoryInterface;
 public class WardrobeService implements WardrobeServiceInterface {
 
     @Autowired
-    WardrobeRepositoryInterface wardrobeRepositoryInterface;
-
-    @Autowired
-    EmailService emailService;
+    WardrobeRepository wardrobeRepository;
 
     @Override
     public void saveClothing(Cloth cloth) {
         cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
-        wardrobeRepositoryInterface.saveClothing(cloth);
+        wardrobeRepository.save(cloth);
         //emailService.clothingAddedNotification();
     }
 }

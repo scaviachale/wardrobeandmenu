@@ -1,21 +1,8 @@
 package scaa.wardrobe.service;
 
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.transaction.annotation.Transactional;
-import scaa.wardrobe.model.User;
-
-import javax.annotation.Resource;
-import javax.mail.Message;
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-
-@Service
-@Transactional
-@EnableTransactionManagement(proxyTargetClass = true)
+//@Service
+//@Transactional
+//@EnableTransactionManagement(proxyTargetClass = true)
 public class EmailService {
 
 //    @Resource(name = "java:/jboss/mail/gmail")

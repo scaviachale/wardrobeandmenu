@@ -53,25 +53,42 @@
 
         <div id="content">
             <h2>Add Clothing</h2>
-            <form th:action="@{/savecloth}" th:object="${Cloth}" method="post">
+            <form th:action="@{/savecloth}" th:object="${cloth}" method="post">
                 <div class="form_settings">
-                    <p><span>Name</span><input type="text" name="name" value=""/></p>
+                    <p><span>Name</span><input type="text" th:field="*{name}" name="name" value=""/>
+                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+                    </p>
                     <p><span>Type</span><select id="type" name="type">
-                        <option th:each="typeOption : ${T(scaa.wardrobe.category.Type).values()}" th:value="${typeOption}" th:text="${typeOption.value}"></option>
+                        <option th:each="typeOption : ${T(scaa.wardrobe.category.Type).values()}"
+                                th:value="${typeOption}" th:text="${typeOption.value}" th:field="*{type}"></option>
+                        <span th:if="${#fields.hasErrors('type')}" th:errors="*{type}">Type Error</span>
                     </select></p>
                     <p><span>Color</span><select id="color" name="color">
-                        <option th:each="colorOption : ${T(scaa.wardrobe.category.Color).values()}" th:value="${colorOption}" th:text="${colorOption.value}"></option>
+                        <option th:each="colorOption : ${T(scaa.wardrobe.category.Color).values()}"
+                                th:value="${colorOption}" th:text="${colorOption.value}" th:field="*{color}"></option>
+                        <span th:if="${#fields.hasErrors('color')}" th:errors="*{color}">Color Error</span>
                     </select></p>
                     <p><span>Color</span><select id="size" name="size">
-                        <option th:each="sizeOption : ${T(scaa.wardrobe.category.Size).values()}" th:value="${sizeOption}" th:text="${sizeOption.value}"></option>
+                        <option th:each="sizeOption : ${T(scaa.wardrobe.category.ClothSize).values()}"
+                                th:value="${sizeOption}" th:text="${sizeOption.value}"></option>
                     </select></p>
                     <p><span>Status</span><select id="status" name="status">
-                        <option th:each="statusOption : ${T(scaa.wardrobe.category.Status).values()}" th:value="${statusOption}" th:text="${statusOption.value}"></option>
+                        <option th:each="statusOption : ${T(scaa.wardrobe.category.Status).values()}"
+                                th:value="${statusOption}" th:text="${statusOption.value}"
+                                th:field="*{status}"></option>
+                        <span th:if="${#fields.hasErrors('status')}" th:errors="*{status}">Status Error</span>
                     </select></p>
-                    <p><span>Date received</span><input type="date" name="name" value=""/></p>
-                    <p><span>Date removed</span><input type="date" name="name" value=""/></p>
-                    <p><span>Checkbox</span><input class="checkbox" type="checkbox" name="name" value=""/></p>
-                    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name"
+                    <p><span>Date received</span><input type="date" name="datereceived" value=""
+                                                        th:field="*{dateReceived}"/>
+                        <span th:if="${#fields.hasErrors('dateReceived')}" th:errors="*{dateReceived}">Date Recieved Error</span>
+                    </p>
+                    <p><span>Date removed</span><input type="date" name="dateremoved" value=""
+                                                       th:field="*{dateRemoved}"/>
+                        <span th:if="${#fields.hasErrors('dateRemoved')}"
+                              th:errors="*{dateRemoved}">Date Removed Error</span>
+                    </p>
+                    <p><span>Checkbox</span><input class="checkbox" type="checkbox" name="checkbox" value=""/></p>
+                    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="save"
                                                                            value="save"/></p>
                 </div>
             </form>

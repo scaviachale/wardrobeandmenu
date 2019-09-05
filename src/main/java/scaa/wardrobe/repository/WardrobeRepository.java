@@ -1,13 +1,8 @@
 package scaa.wardrobe.repository;
 
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 import scaa.wardrobe.model.Cloth;
 
-@Repository
-public class WardrobeRepository implements WardrobeRepositoryInterface {
+public interface WardrobeRepository extends CrudRepository<Cloth,Long> {
 
-    @Override
-    public void saveClothing(Cloth cloth) {
-
-    }
 }
