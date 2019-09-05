@@ -20,16 +20,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/JpaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/JpaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/category/ClothSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/WardrobeUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepositoryInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567432221841</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="adding/ binding and validation / jpa config">
+      <created>1567684388342</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1567684388342</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +203,7 @@
     <MESSAGE value="wardrobe/master" />
     <MESSAGE value="ui/adding html features" />
     <MESSAGE value="ui/adding html features and spring configs" />
-    <option name="LAST_COMMIT_MESSAGE" value="ui/adding html features and spring configs" />
+    <MESSAGE value="adding/ binding and validation / jpa config" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding/ binding and validation / jpa config" />
   </component>
 </project>

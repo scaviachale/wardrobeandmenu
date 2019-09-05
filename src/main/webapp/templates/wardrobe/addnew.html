@@ -68,9 +68,9 @@
                                 th:value="${colorOption}" th:text="${colorOption.value}" th:field="*{color}"></option>
                         <span th:if="${#fields.hasErrors('color')}" th:errors="*{color}">Color Error</span>
                     </select></p>
-                    <p><span>Color</span><select id="size" name="size">
+                    <p><span>Size</span><select id="size" name="size">
                         <option th:each="sizeOption : ${T(scaa.wardrobe.category.ClothSize).values()}"
-                                th:value="${sizeOption}" th:text="${sizeOption.value}"></option>
+                                th:value="${sizeOption}" th:text="${sizeOption.value}" th:field="*{size}"></option>
                     </select></p>
                     <p><span>Status</span><select id="status" name="status">
                         <option th:each="statusOption : ${T(scaa.wardrobe.category.Status).values()}"
@@ -80,7 +80,7 @@
                     </select></p>
                     <p><span>Date received</span><input type="date" name="datereceived" value=""
                                                         th:field="*{dateReceived}"/>
-                        <span th:if="${#fields.hasErrors('dateReceived')}" th:errors="*{dateReceived}">Date Recieved Error</span>
+                        <span th:if="${#fields.hasErrors('dateReceived')}" th:errors="*{dateReceived}">Date Received Error</span>
                     </p>
                     <p><span>Date removed</span><input type="date" name="dateremoved" value=""
                                                        th:field="*{dateRemoved}"/>

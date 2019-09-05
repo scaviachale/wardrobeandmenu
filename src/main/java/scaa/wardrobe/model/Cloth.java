@@ -1,5 +1,6 @@
 package scaa.wardrobe.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
 import scaa.wardrobe.category.ClothSize;
 import scaa.wardrobe.category.Color;
 import scaa.wardrobe.category.Status;
@@ -19,11 +20,11 @@ public class Cloth {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long clothId;
 
-    @NotNull(message = "Hat number can't be null")
+    @NotNull(message = "Number can't be null")
     private String clothNumber;
 
     @Size(min = 3, max = 100)
-    @NotNull(message = "Hat name can't be empty")
+    @NotNull(message = "Name can't be empty")
     private String name;
 
     private Type type;
@@ -44,7 +45,7 @@ public class Cloth {
     public Cloth() {
     }
 
-    public Cloth(@NotNull(message = "Hat number can't be null") String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Hat name can't be empty") String name, Type type, Status status, ClothSize size, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
+    public Cloth(@NotNull(message = "Number can't be null") String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Name can't be empty") String name, Type type, Status status, ClothSize size, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
         this.clothNumber = clothNumber;
         this.name = name;
         this.type = type;
