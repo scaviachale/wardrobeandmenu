@@ -20,7 +20,6 @@ public class Cloth {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long clothId;
 
-    @NotNull(message = "Number can't be null")
     private String clothNumber;
 
     @Size(min = 3, max = 100)
@@ -35,17 +34,19 @@ public class Cloth {
 
     private Color color;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @NotNull(message = "Date bought is required")
     @PastOrPresent
     private Date dateReceived;
 
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     @PastOrPresent
     private Date dateRemoved;
 
     public Cloth() {
     }
 
-    public Cloth(@NotNull(message = "Number can't be null") String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Name can't be empty") String name, Type type, Status status, ClothSize size, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
+    public Cloth(String clothNumber, @Size(min = 3, max = 100) @NotNull(message = "Name can't be empty") String name, Type type, Status status, ClothSize size, Color color, @NotNull(message = "Date bought is required") @PastOrPresent Date dateReceived, @PastOrPresent Date dateRemoved) {
         this.clothNumber = clothNumber;
         this.name = name;
         this.type = type;
@@ -144,5 +145,20 @@ public class Cloth {
         int result = (int) (clothId ^ (clothId >>> 32));
         result = 31 * result + (clothNumber != null ? clothNumber.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Cloth{" +
+                "clothId=" + clothId +
+                ", clothNumber='" + clothNumber + '\'' +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                ", status=" + status +
+                ", size=" + size +
+                ", color=" + color +
+                ", dateReceived=" + dateReceived +
+                ", dateRemoved=" + dateRemoved +
+                '}';
     }
 }

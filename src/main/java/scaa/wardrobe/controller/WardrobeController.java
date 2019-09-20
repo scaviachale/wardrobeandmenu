@@ -16,7 +16,7 @@ import javax.validation.Valid;
 
 @Controller
 @RequestMapping(path = "/")
-public class WardrobeController implements WardrobeControllerInterface{
+public class WardrobeController implements WardrobeControllerInterface {
 
     @Autowired
     WardrobeServiceInterface wardrobeServiceInterface;
@@ -39,10 +39,12 @@ public class WardrobeController implements WardrobeControllerInterface{
 
     @PostMapping(value = "/savecloth")
     public String saveClothing(@ModelAttribute("cloth") @Valid Cloth cloth, BindingResult bindingResult) {
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
+            System.out.println("++++++has errors++++++");
             return "/addnew";
         }
+        System.out.println(cloth.toString());
         wardrobeServiceInterface.saveClothing(cloth);
-        return "/success";
+        return "redirect:/success";
     }
 }
