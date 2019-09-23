@@ -43,29 +43,30 @@
     </div>
 
     <div id="site_content">
-            <h1>Result</h1>
-            <table style="width:100%; border-spacing:0;">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Size</th>
-                    <th>Color</th>
-                    <th>Status</th>
-                    <th>Date Added</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr th:each="cloth : ${cloth}">
-                    <td th:text="${cloth.name}">Text ...</td>
-                    <td th:text="${cloth.type}">Text ...</td>
-                    <td th:text="${cloth.size}">Text ...</td>
-                    <td th:text="${cloth.color}">Text ...</td>
-                    <td th:text="${cloth.status}">Text ...</td>
-                    <td th:text="${cloth.dateReceived}">Text ...</td>
-                </tr>
-                </tbody>
-            </table>
+        <h1>Successfully Added</h1>
+        <hr/>
+        <table style="width:100%; border-spacing:0;">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Status</th>
+                <th>Date Added</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="cloth : ${cloth}">
+                <td th:text="${cloth.name}">Text ...</td>
+                <td th:text="${cloth.type}">Text ...</td>
+                <td th:text="${cloth.size}">Text ...</td>
+                <td th:text="${cloth.color}">Text ...</td>
+                <td th:text="${cloth.status}">Text ...</td>
+                <td th:text="${cloth.dateReceived}">Text ...</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 <div id="footer">
