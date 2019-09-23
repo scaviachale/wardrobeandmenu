@@ -26,12 +26,16 @@ public class Cloth {
     @NotNull(message = "Name can't be empty")
     private String name;
 
+    @Enumerated(EnumType.STRING)
     private Type type;
 
+    @Enumerated(EnumType.STRING)
     private Status status;
 
+    @Enumerated(EnumType.STRING)
     private ClothSize size;
 
+    @Enumerated(EnumType.STRING)
     private Color color;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")

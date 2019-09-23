@@ -1,54 +1,25 @@
 package scaa.wardrobe.service;
 
-//@Service
-//@Transactional
-//@EnableTransactionManagement(proxyTargetClass = true)
+import javax.mail.Session;
+import java.util.Properties;
+
 public class EmailService {
 
-//    @Resource(name = "java:/jboss/mail/gmail")
-//    private Session session;
-//
-//    public void thankYouForRegistering(User user) {
-//        String to = user.getEmail();
-//        String username = user.getUsername();
-//
-//        // compose the message
-//        try {
-//            MimeMessage message = new MimeMessage(session);
-//            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-//            message.setSubject("Registration successful");
-//            message.setText("Thank you " + username.toUpperCase()
-//                    + " for registering on WardrobeandMenu system. Now you can start keeping track of your clothes and checking daily tips on what to wear from your wardrobe,"
-//                    + " below is an attached pdf with tips to help you get started and about the application.");
-//
-//            // Send message
-//            Transport.send(message);
-//            System.out.println("message sent successfully....");
-//
-//        } catch (MessagingException mex) {
-//            throw new RuntimeException(mex);
-//        }
-//    }
-//
-//    public void clothingAddedNotification(User user) {
-//        String to = user.getEmail();
-//        String username = user.getUsername();
-//
-//        // compose the message
-//        try {
-//            MimeMessage message = new MimeMessage(session);
-//            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-//            message.setSubject("Clothing successfully added");
-//            message.setText("Thank you " + username.toUpperCase()
-//                    + " for registering on WardrobeandMenu system. Now you can start keeping track of your clothes and checking daily tips on what to wear from your wardrobe,"
-//                    + " below is an attached pdf with tips to help you get started and about the application.");
-//
-//            // Send message
-//            Transport.send(message);
-//            System.out.println("message sent successfully....");
-//
-//        } catch (MessagingException mex) {
-//            throw new RuntimeException(mex);
-//        }
-//    }
+    public void thankYouForRegistering() {
+        String sender = "scaviacmhlanga@gmail.com";
+        String username = "scaviacmhlanga@gmail.com";
+        String password = "rumbiescar11";
+
+        Properties prop = new Properties();
+        prop.put("mail.smtp.auth", "true");
+        prop.put("mail.smtp.starttls.enable", "false");
+        prop.put("mail.smtp.starttls.required", "false");
+        prop.put("mail.transport.protocol", "smtp");
+        prop.put("mail.smtp.host", "gmail.com");
+        prop.put("mail.smtp.port", "");
+
+        Session session = Session.getInstance(prop, new SMTPAuthenticator(username,password));
+
+
+    }
 }
