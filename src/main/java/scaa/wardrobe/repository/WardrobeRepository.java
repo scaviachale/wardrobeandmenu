@@ -9,8 +9,8 @@ import java.util.List;
 
 public interface WardrobeRepository extends CrudRepository<Cloth, Long> {
 
-    @Query(value = "\"SELECT c FROM cloth c WHERE c.name LIKE '%' || :keyword || '%'\"\n" +
-            "            + \" OR c.email LIKE '%' || :keyword || '%'\"\n" +
-            "            + \" OR c.address LIKE '%' || :keyword || '%'\"")
+    @Query(value = "SELECT c FROM Cloth c WHERE c.name LIKE '%' || :keyword || '%'"
+            + " OR c.clothNumber LIKE '%' || :keyword || '%'"
+            + " OR c.size LIKE '%' || :keyword || '%'")
     public List<Cloth> search(@Param("keyword") String keyword);
 }

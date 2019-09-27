@@ -6,8 +6,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8198acc993df358eb02d1ec846af4686a69a6ffc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95b8f4e25731ef774556083b4e3f3d95da017840" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9d2ee12258901d8198422a02ad1f967bdcbcc41" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" beforeDir="false" />
@@ -25,11 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeServiceInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -222,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569239591621</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="master branch">
+      <created>1569585559331</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1569585559331</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +249,7 @@
     <MESSAGE value="ui/adding html features and spring configs" />
     <MESSAGE value="adding/ binding and validation / jpa config" />
     <MESSAGE value="email service, enum in db as string" />
-    <option name="LAST_COMMIT_MESSAGE" value="email service, enum in db as string" />
+    <MESSAGE value="master branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="master branch" />
   </component>
 </project>

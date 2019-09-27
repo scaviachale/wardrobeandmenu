@@ -14,11 +14,11 @@
     <div id="header">
         <div id="logo">
             <div id="search">
-                <form method="post" action="#" id="search_form">
+                <form th:action="@{/search}" method="get" id="search_form">
                     <p>
                         <input class="search" type="text"
                                style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
-                               name="search_field" placeholder="Enter keywords"/>
+                               name="keyword" placeholder="Enter keywords"/>
                         <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
                                th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
                     </p>
