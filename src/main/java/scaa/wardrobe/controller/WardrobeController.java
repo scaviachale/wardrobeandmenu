@@ -4,15 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import scaa.wardrobe.model.Cloth;
 import scaa.wardrobe.service.WardrobeServiceInterface;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping(path = "/")
@@ -45,5 +43,13 @@ public class WardrobeController implements WardrobeControllerInterface {
         System.out.println(cloth.toString());
         wardrobeServiceInterface.saveClothing(cloth);
         return "/success";
+    }
+
+    @GetMapping(value="/search")
+    public ModelAndView search(@RequestParam String keyword){
+        List<Cloth> searchlist = wardrobeServiceInterface.search(keyword);
+        ModelAndView modelAndView = new ModelAndView("search");
+        modelAndView.addObject("searchlist", searchlist);
+        return modelAndView;
     }
 }

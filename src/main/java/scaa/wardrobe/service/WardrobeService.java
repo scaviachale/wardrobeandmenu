@@ -8,6 +8,8 @@ import scaa.wardrobe.model.Cloth;
 import scaa.wardrobe.model.GenerateClothNumber;
 import scaa.wardrobe.repository.WardrobeRepository;
 
+import java.util.List;
+
 @Service
 @Transactional
 @EnableTransactionManagement(proxyTargetClass = true)
@@ -21,5 +23,10 @@ public class WardrobeService implements WardrobeServiceInterface {
         cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
         wardrobeRepository.save(cloth);
         //emailService.clothingAddedNotification();
+    }
+
+    @Override
+    public List<Cloth> search(String keyword) {
+        return wardrobeRepository.search(keyword);
     }
 }

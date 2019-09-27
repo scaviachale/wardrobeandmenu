@@ -1,8 +1,16 @@
 package scaa.wardrobe.repository;
 
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import scaa.wardrobe.model.Cloth;
 
-public interface WardrobeRepository extends CrudRepository<Cloth,Long> {
+import java.util.List;
 
+public interface WardrobeRepository extends CrudRepository<Cloth, Long> {
+
+    @Query(value = "\"SELECT c FROM cloth c WHERE c.name LIKE '%' || :keyword || '%'\"\n" +
+            "            + \" OR c.email LIKE '%' || :keyword || '%'\"\n" +
+            "            + \" OR c.address LIKE '%' || :keyword || '%'\"")
+    public List<Cloth> search(@Param("keyword") String keyword);
 }

@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c3a80949a054bc64a7d2b67c0952d25ebc2ec3c" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8198acc993df358eb02d1ec846af4686a69a6ffc" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95b8f4e25731ef774556083b4e3f3d95da017840" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9d2ee12258901d8198422a02ad1f967bdcbcc41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/ApplicationLauncher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5238fdfc2b75a82a47bab6537bb814876adc5f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5238fdfc2b75a82a47bab6537bb814876adc5f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5234f374a214f0911a40dfc2eedb487c0dde0a01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5234f374a214f0911a40dfc2eedb487c0dde0a01" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa45cd8f2685938502511d55a7833a95926e94d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b7f1d04e3f03decfe1a7f7ef7efb18c9d0e53c6" beforeDir="false" />
@@ -17,11 +21,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5be29a69202d6c08c6b1faa4e2d399388de7f0c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9200026379b4d5e880b1efe32b1c7c6a9f4bdbe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/ebf66d4d73e464fb151ed7bd20ad9182372fa4a4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Cloth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/addnew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/repository/WardrobeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +42,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -58,7 +67,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.52281517" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
@@ -83,6 +92,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="ApplicationLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="scaa.wardrobe.ApplicationLauncher" />
+      <module name="wardrobeandmenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scaa.wardrobe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ApplicationLauncher" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -179,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567684388342</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding/ binding and validation / jpa config">
+      <created>1567691023080</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1567691023080</updated>
+    </task>
+    <task id="LOCAL-00014" summary="email service, enum in db as string">
+      <created>1569239591620</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1569239591621</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +247,7 @@
     <MESSAGE value="ui/adding html features" />
     <MESSAGE value="ui/adding html features and spring configs" />
     <MESSAGE value="adding/ binding and validation / jpa config" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding/ binding and validation / jpa config" />
+    <MESSAGE value="email service, enum in db as string" />
+    <option name="LAST_COMMIT_MESSAGE" value="email service, enum in db as string" />
   </component>
 </project>
