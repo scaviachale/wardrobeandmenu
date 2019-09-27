@@ -40,6 +40,7 @@ public class WardrobeController implements WardrobeControllerInterface {
         if (bindingResult.hasErrors()) {
             return "/addnew";
         }
+        System.out.println("in wardrobecontroller");
         System.out.println(cloth.toString());
         wardrobeServiceInterface.saveClothing(cloth);
         return "/success";

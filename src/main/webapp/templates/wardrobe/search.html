@@ -1,12 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Scavia's Wardrobe</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+    <link th:href="@{/templates/wardrobe/style/style.css}" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="search">
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text"
+                               style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
+                               name="search_field" placeholder="Enter keywords"/>
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
+                               th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
+                    </p>
+                </form>
+            </div>
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="/wardrobeandmenu/">Scavia's <span class="logo_colour">Wardrobe</span></a></h1>
+                <h2>Simple. Scavia's. Wardrobe Manager.</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li class="selected"><a href="/wardrobeandmenu/">Overview</a></li>
+                <li><a href="/wardrobeandmenu/clothes">Clothes</a></li>
+                <li><a href="page.html">Gadgets</a></li>
+                <li><a href="another_page.html">What's Up Today</a></li>
+                <li><a href="contact.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
 
-<p>DONE!!!</p>
-
+    <div id="site_content">
+        <h1>Search Results</h1>
+        <hr/>
+        <table style="width:100%; border-spacing:0;">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Size</th>
+                <th>Color</th>
+                <th>Status</th>
+                <th>Date Added</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="cloth : ${searchlist}">
+                <td th:text="${cloth.name}">Text ...</td>
+                <td th:text="${cloth.type}">Text ...</td>
+                <td th:text="${cloth.size}">Text ...</td>
+                <td th:text="${cloth.color}">Text ...</td>
+                <td th:text="${cloth.status}">Text ...</td>
+                <td th:text="${cloth.dateReceived}">Text ...</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="footer">
+    Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a
+        href="#">CHARLES</a> | <a
+        href="#">MHLANGA</a>
+</div>
+</div>
 </body>
 </html>
