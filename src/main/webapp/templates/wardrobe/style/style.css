@@ -271,16 +271,16 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   border: 1px solid #E5E5DB; 
   background: #FFF; 
   color: #47433F;}
-  
+
 .form_settings .submit
-{ font: 100% arial; 
-  border: 1px solid; 
-  width: 99px; 
-  margin: 0 0 0 212px; 
+{ font: 100% arial;
+  border: 1px solid;
+  width: 99px;
+  margin: 0 0 0 212px;
   height: 33px;
   padding: 2px 0 3px 0;
-  cursor: pointer; 
-  background: #1293EE; 
+  cursor: pointer;
+  background: #1293EE;
   color: #FFF;}
 
 .form_settings textarea, .form_settings select
@@ -296,6 +296,29 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   width: 14px;
   border: 0;
   background: none;}
+
+  .btn
+  { font: 100% arial;
+    border: 1px solid;
+    width: 99px;
+    height: 33px;
+    padding: 2px 0 3px 0;
+    cursor: pointer;
+    background: #1293EE;
+    color: #FFF;
+    opacity: 0.8;}
+
+.edit
+{
+  background: #4CAF50;}
+
+  .delete
+  {
+    background: red;}
+
+.btn:hover{
+  opacity: 1;
+}
 
 .separator
 { width: 100%;

@@ -29,4 +29,14 @@ public class WardrobeService implements WardrobeServiceInterface {
     public List<Cloth> search(String keyword) {
         return wardrobeRepository.search(keyword);
     }
+
+    @Override
+    public List<Cloth> viewAll() {
+        return (List<Cloth>) wardrobeRepository.findAll();
+    }
+
+    @Override
+    public Cloth getCloth(Long id) {
+        return wardrobeRepository.findById(id).get();
+    }
 }

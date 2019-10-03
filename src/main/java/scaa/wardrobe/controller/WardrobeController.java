@@ -27,6 +27,7 @@ public class WardrobeController implements WardrobeControllerInterface {
     @GetMapping(value = "/add")
     public String addClothing(Model model) {
         model.addAttribute("cloth", new Cloth());
+
         return "/addnew";
     }
 
@@ -43,14 +44,34 @@ public class WardrobeController implements WardrobeControllerInterface {
         System.out.println("in wardrobecontroller");
         System.out.println(cloth.toString());
         wardrobeServiceInterface.saveClothing(cloth);
+
         return "/success";
     }
 
-    @GetMapping(value="/search")
-    public ModelAndView search(@RequestParam String keyword){
+    @GetMapping(value = "/search")
+    public ModelAndView search(@RequestParam String keyword) {
         List<Cloth> searchlist = wardrobeServiceInterface.search(keyword);
         ModelAndView modelAndView = new ModelAndView("search");
         modelAndView.addObject("searchlist", searchlist);
+
+        return modelAndView;
+    }
+
+    @GetMapping(value = "/viewall")
+    public ModelAndView viewAll() {
+        List<Cloth> viewall = wardrobeServiceInterface.viewAll();
+        ModelAndView modelAndView = new ModelAndView("wardrobeitems");
+        modelAndView.addObject("viewall", viewall);
+
+        return modelAndView;
+    }
+
+    @GetMapping(value = "/edit")
+    public ModelAndView editclothing(@RequestParam long id) {
+        ModelAndView modelAndView = new ModelAndView("editcustomer");
+        Cloth cloth = wardrobeServiceInterface.getCloth(id);
+        modelAndView.addObject("cloth", cloth);
+
         return modelAndView;
     }
 }
