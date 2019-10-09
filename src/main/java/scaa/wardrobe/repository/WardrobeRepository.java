@@ -13,4 +13,11 @@ public interface WardrobeRepository extends CrudRepository<Cloth, Long> {
             + " OR c.clothNumber LIKE '%' || :keyword || '%'"
             + " OR c.size LIKE '%' || :keyword || '%'")
     public List<Cloth> search(@Param("keyword") String keyword);
+
+    @Query(value = "SELECT c FROM Cloth c WHERE c.type = 'SHIRT'"
+            + " OR c.type = 'TSHIRT'")
+    public List<Cloth> topWear();
+
+    @Query(value = "SELECT c FROM Cloth c WHERE c.type = 'JEAN'")
+    public List<Cloth> bottomWear();
 }

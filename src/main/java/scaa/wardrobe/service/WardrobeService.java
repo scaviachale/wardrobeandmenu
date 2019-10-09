@@ -6,8 +6,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 import scaa.wardrobe.model.Cloth;
 import scaa.wardrobe.model.GenerateClothNumber;
+import scaa.wardrobe.model.WardrobeUser;
 import scaa.wardrobe.repository.WardrobeRepository;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -20,9 +23,13 @@ public class WardrobeService implements WardrobeServiceInterface {
 
     @Override
     public void saveClothing(Cloth cloth) {
-        cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
+        //null check cant use equals because left side already null so its nolonger an object
+        if (cloth.getClothNumber() == null) {
+            cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
+        }
         wardrobeRepository.save(cloth);
-        //emailService.clothingAddedNotification();
+        WardrobeUser scavia = new WardrobeUser(1,"scavia","scavia@psybergate.co.za");
+        EmailService.sendEmail(scavia);
     }
 
     @Override
@@ -39,4 +46,18 @@ public class WardrobeService implements WardrobeServiceInterface {
     public Cloth getCloth(Long id) {
         return wardrobeRepository.findById(id).get();
     }
+
+    @Override
+    public List<Cloth> getWearCombination() {
+        List<Cloth> topwear = wardrobeRepository.topWear();
+        Collections.shuffle(topwear);
+        List<Cloth> bottomwear = wardrobeRepository.bottomWear();
+        Collections.shuffle(bottomwear);
+        List<Cloth> combination = new ArrayList<>();
+        combination.add(topwear.get(0));
+        combination.add(bottomwear.get(0));
+
+        return combination;
+    }
+
 }

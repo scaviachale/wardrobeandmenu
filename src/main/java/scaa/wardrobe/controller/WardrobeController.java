@@ -74,4 +74,13 @@ public class WardrobeController implements WardrobeControllerInterface {
 
         return modelAndView;
     }
+
+    @GetMapping(value = "/todaycombination")
+    public ModelAndView todayCombination() {
+        List<Cloth> combinationWear = wardrobeServiceInterface.getWearCombination();
+        ModelAndView modelAndView = new ModelAndView("combination");
+        modelAndView.addObject("combinationWear", combinationWear);
+
+        return modelAndView;
+    }
 }

@@ -99,6 +99,12 @@
             <version>${thymeleaf.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -123,7 +129,7 @@
                     <artifactId>maven-war-plugin</artifactId>
                     <version>2.4</version>
                     <configuration>
-<!--                        <warSourceDirectory>src/main/resources/templates/wardrobe</warSourceDirectory>-->
+                        <!--                        <warSourceDirectory>src/main/resources/templates/wardrobe</warSourceDirectory>-->
                         <warName>wardrobeandmenu</warName>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
                     </configuration>

@@ -43,7 +43,7 @@
     </div>
 
     <div id="site_content">
-        <h1>Successfully Added.</h1>
+        <h1>Suggested combination To be worn Today.</h1>
         <hr/>
         <table style="width:100%; border-spacing:0;">
             <thead>
@@ -52,22 +52,19 @@
                 <th>Type</th>
                 <th>Size</th>
                 <th>Color</th>
-                <th>Status</th>
-                <th>Date Added</th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="cloth : ${cloth}">
+            <tr th:each="cloth : ${combinationWear}">
                 <td th:text="${cloth.name}">Text ...</td>
                 <td th:text="${cloth.type}">Text ...</td>
                 <td th:text="${cloth.size}">Text ...</td>
                 <td th:text="${cloth.color}">Text ...</td>
-                <td th:text="${cloth.status}">Text ...</td>
-                <td th:text="${cloth.dateReceived}">Text ...</td>
             </tr>
             </tbody>
         </table>
     </div>
+
 </div>
 <div id="footer">
     Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a

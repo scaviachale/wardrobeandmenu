@@ -12,4 +12,7 @@ public interface WardrobeServiceInterface {
     public List<Cloth> viewAll();
 
     public Cloth getCloth(Long id);
+
+    public List<Cloth> getWearCombination();
+
 }

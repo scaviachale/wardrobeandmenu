@@ -36,7 +36,7 @@
                 <li><a href="/wardrobeandmenu/">Overview</a></li>
                 <li class="selected"><a href="/wardrobeandmenu/clothes">Clothes</a></li>
                 <li><a href="page.html">Gadgets</a></li>
-                <li><a href="another_page.html">What's Up Today</a></li>
+                <li><a href="/wardrobeandmenu/todaycombination">What's Up Today</a></li>
                 <li><a href="contact.html">Reports</a></li>
             </ul>
         </div>
@@ -55,8 +55,16 @@
             <h2>Edit Clothing.</h2>
             <form th:action="@{/savecloth}" th:object="${cloth}" method="post">
                 <div class="form_settings">
+                    <!-- ID should be send though to do an update                   -->
+                    <p><span></span><input type="hidden" th:field="*{clothId}" name="ID" value=""/><br/>
+                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{clothId}">Name Error</span>
+                    </p>
                     <p><span>Name</span><input type="text" th:field="*{name}" name="name" value=""/>
                         <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+                    </p>
+                    <p><span>Cloth Number</span><input type="text" th:field="*{clothNumber}" name="Cloth Number"
+                                                       value=""/>
+                        <span th:if="${#fields.hasErrors('clothNumber')}" th:errors="*{clothNumber}">Name Error</span>
                     </p>
                     <p><span>Type</span><select id="type" name="type" required>
                         <option value="" selected="selected">Select One</option>
