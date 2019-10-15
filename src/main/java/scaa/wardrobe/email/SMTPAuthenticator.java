@@ -1,4 +1,4 @@
-package scaa.wardrobe.service;
+package scaa.wardrobe.email;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;

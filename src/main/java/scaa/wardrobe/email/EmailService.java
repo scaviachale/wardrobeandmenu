@@ -1,4 +1,4 @@
-package scaa.wardrobe.service;
+package scaa.wardrobe.email;
 
 import scaa.wardrobe.model.WardrobeUser;
 
@@ -12,7 +12,7 @@ import java.util.Properties;
 
 public class EmailService {
 
-    public static void sendEmail(WardrobeUser wardrobeUser) {
+    public static void sendEmail(WardrobeUser wardrobeUser, EmailType emailType) {
         String username = "scaviacmhlanga@gmail.com";
         String password = "rumbiescar11";
         String to = wardrobeUser.getEmail();
@@ -31,10 +31,9 @@ public class EmailService {
         try {
             MimeMessage message = new MimeMessage(session);
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject("Cloth saved successfully____");
-            message.setText("Thank you " + customerName.toUpperCase()
-                    + " for registering with us. Now you can start calculating and saving your financial projections,"
-                    + " below is an attached pdf with tips to help you get started and about the application.");
+            message.setSubject(emailType.NOTIFICATION);
+            message.setText("Hello " + customerName.toUpperCase()
+                    + ", "+ emailType.NOTIFICATION_MESSAGE_BODY);
 
             Transport.send(message);
             System.out.println("message sent successfully....");

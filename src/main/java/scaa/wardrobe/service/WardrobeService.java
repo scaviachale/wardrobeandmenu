@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
+import scaa.wardrobe.email.EmailService;
+import scaa.wardrobe.email.EmailType;
 import scaa.wardrobe.model.Cloth;
 import scaa.wardrobe.model.GenerateClothNumber;
 import scaa.wardrobe.model.WardrobeUser;
@@ -28,8 +30,7 @@ public class WardrobeService implements WardrobeServiceInterface {
             cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
         }
         wardrobeRepository.save(cloth);
-        WardrobeUser scavia = new WardrobeUser(1,"scavia","scavia@psybergate.co.za");
-        EmailService.sendEmail(scavia);
+        EmailService.sendEmail(new WardrobeUser(1,"scavia","scavia@psybergate.co.za"), new EmailType());
     }
 
     @Override
