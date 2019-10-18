@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.Transactional;
 import scaa.wardrobe.email.EmailService;
 import scaa.wardrobe.email.EmailType;
 import scaa.wardrobe.model.Cloth;
-import scaa.wardrobe.model.GenerateClothNumber;
 import scaa.wardrobe.model.WardrobeUser;
 import scaa.wardrobe.repository.WardrobeRepository;
 
@@ -30,7 +29,7 @@ public class WardrobeService implements WardrobeServiceInterface {
             cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
         }
         wardrobeRepository.save(cloth);
-        EmailService.sendEmail(new WardrobeUser(1,"scavia","scavia@psybergate.co.za"), new EmailType());
+        EmailService.sendEmail(new WardrobeUser(1, "scavia", "scavia@psybergate.co.za", true), new EmailType());
     }
 
     @Override
@@ -54,9 +53,12 @@ public class WardrobeService implements WardrobeServiceInterface {
         Collections.shuffle(topwear);
         List<Cloth> bottomwear = wardrobeRepository.bottomWear();
         Collections.shuffle(bottomwear);
+
         List<Cloth> combination = new ArrayList<>();
-        combination.add(topwear.get(0));
-        combination.add(bottomwear.get(0));
+        if (topwear.size() > 0 && bottomwear.size() > 0) {
+            combination.add(topwear.get(0));
+            combination.add(bottomwear.get(0));
+        }
 
         return combination;
     }

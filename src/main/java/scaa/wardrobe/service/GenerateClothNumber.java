@@ -1,4 +1,4 @@
-package scaa.wardrobe.model;
+package scaa.wardrobe.service;
 
 import java.security.SecureRandom;
 

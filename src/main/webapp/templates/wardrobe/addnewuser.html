@@ -43,38 +43,31 @@
     </div>
 
     <div id="site_content">
-        <h1>Wardrobe items &#128195;.</h1>
-        <hr/>
-        <table style="width:100%; border-spacing:0;">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Size</th>
-                <th>Color</th>
-                <th>Status</th>
-                <th>Date Added</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="cloth : ${viewall}">
-                <td th:text="${cloth.name}">Text ...</td>
-                <td th:text="${cloth.type}">Text ...</td>
-                <td th:text="${cloth.size}">Text ...</td>
-                <td th:text="${cloth.color}">Text ...</td>
-                <td th:text="${cloth.status}">Text ...</td>
-                <td th:text="${cloth.dateReceived}">Text ...</td>
-                <td>
-                        <input class="btn" type="submit" name="more" value="more"/>
-                        <input class="btn edit" type="submit" name="edit" value="edit" th:onclick="|window.location.href='/wardrobeandmenu/edit?id=${cloth.clothId}'|" />
-                        <input class="btn delete" type="submit" name="delete" value="delete"/>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+        <div class="sidebar">
+            <br/><br/><br/><br/>
+            <p><img th:src="@{/templates/wardrobe/style/scaa.jpg}" alt="Clothes"
+                    style="border-radius: 50%;border: 5px solid #162129; width:95%;height:170px;"></p>
+            <p></p>
+        </div>
+        <div class="container"></div>
 
+        <div id="content">
+            <h2>Add User &#129333;.</h2>
+            <form th:action="@{/user/saveuser}" th:object="${user}" method="post">
+                <div class="form_settings">
+                    <p><span>Name</span><input type="text" th:field="*{username}" name="name" value=""/>
+                        <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}">Name Error</span>
+                    </p>
+                    <p><span>E-mail</span><input type="email" th:field="*{email}" name="email" value=""/>
+                        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</span>
+                    </p>
+                    <p><span>Admin </span><input class="checkbox" type="checkbox" th:checked="${user.admin}" name="admin"/></p>
+                    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="save"
+                                                                           value="save"/></p>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 <div id="footer">
     Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a
