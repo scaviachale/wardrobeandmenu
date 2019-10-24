@@ -333,7 +333,7 @@ table
 table tr th, table tr td
 { background: #3B3B3B;
   color: #FFF;
-  padding: 7px 4px;
+  padding: 15px 4px;
   text-align: left;}
   
 table tr td
@@ -379,6 +379,21 @@ table tr td
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+/* card */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 33%;
+  margin: 15px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+/* card */
 
 /* Toggle this class - hide and show the popup */
 .popup .show {

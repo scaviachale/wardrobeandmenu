@@ -45,24 +45,14 @@
     <div id="site_content">
         <h1>Handpicked combination &#128076;.</h1>
         <hr/>
-        <table style="width:100%; border-spacing:0;">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Size</th>
-                <th>Color</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="cloth : ${combinationWear}">
-                <td th:text="${cloth.name}">Text ...</td>
-                <td th:text="${cloth.type}">Text ...</td>
-                <td th:text="${cloth.size}">Text ...</td>
-                <td th:text="${cloth.color}">Text ...</td>
-            </tr>
-            </tbody>
-        </table>
+
+        <div class="card" th:each="cloth : ${combinationWear}">
+            <img th:src="@{/templates/wardrobe/style/rack.jpg}" alt="Wardrobe" style="width:100%">
+            <h1 th:text="${cloth.name}">Text ...</h1>
+            <p class="title" th:text="${cloth.type}">Text ...</p>
+            <p th:text="${cloth.clothNumber}"> Text ... </p>
+            <p th:text="${cloth.color}">Text ...</p>
+        </div>
     </div>
 
 </div>
