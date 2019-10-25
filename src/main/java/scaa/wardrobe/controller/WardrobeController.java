@@ -83,4 +83,10 @@ public class WardrobeController implements WardrobeControllerInterface {
 
         return modelAndView;
     }
+
+    @GetMapping(value="/reports")
+    public String generateReport(){
+
+        return "/reports";
+    }
 }
