@@ -1,0 +1,237 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Scavia's Wardrobe</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+    <link th:href="@{/templates/wardrobe/style/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="search">
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text"
+                               style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
+                               name="search_field" placeholder="Enter keywords"/>
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
+                               th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
+                    </p>
+                </form>
+            </div>
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="/wardrobeandmenu/">Scavia's <span class="logo_colour">Wardrobe</span></a></h1>
+                <h2>Simple. Scavia's. Wardrobe Manager.</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li class="selected"><a href="/wardrobeandmenu/">Overview</a></li>
+                <li><a href="/wardrobeandmenu/clothes">Clothes</a></li>
+                <li><a href="page.html">Gadgets</a></li>
+                <li><a href="another_page.html">What's Up Today</a></li>
+                <li><a href="contact.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="site_content">
+
+        <div class="overview">
+            <h2>Shirts</h2>
+            <img th:src="@{/templates/wardrobe/style/shirt.jpg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="myFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext"
+                      id="myPopup"><u>SHIRTS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+
+        <div class="overview">
+            <h2>Shoes</h2>
+            <img th:src="@{/templates/wardrobe/style/shoe.jpeg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%; height:170px;">
+            <div class="popup" onclick="shoeFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext"
+                      id="shoePopup"><u>SHOES</u><br/><br/> Recently Added: <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Jackets</h2>
+            <img th:src="@{/templates/wardrobe/style/jackets.png}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="jacketFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext" id="jacketPopup"><u>JACKETS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>T-shirts</h2>
+            <img th:src="@{/templates/wardrobe/style/tshirts.jpg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="tshirtFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext" id="tshirtPopup"><u>T-SHIRTS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Socks</h2>
+            <img th:src="@{/templates/wardrobe/style/socks.png}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="socksFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext"
+                      id="socksPopup"><u>SOCKS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Jeans</h2>
+            <img th:src="@{/templates/wardrobe/style/jeans.png}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="jeansFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext"
+                      id="jeansPopup"><u>JEANS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Hats</h2>
+            <img th:src="@{/templates/wardrobe/style/hats.jpg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="hatsFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext"
+                      id="hatsPopup"><u>HATS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Jerseys</h2>
+            <img th:src="@{/templates/wardrobe/style/jersey.png}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="jerseysFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext" id="jerseysPopup"><u>JERSEYS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Suits</h2>
+            <img th:src="@{/templates/wardrobe/style/suit.png}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="suitsFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext"
+                      id="suitsPopup"><u>SUITS</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Nightwear</h2>
+            <img th:src="@{/templates/wardrobe/style/nightt.jpg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="nightwearFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext" id="nightwearPopup"><u>NIGHTWEAR</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Underwear</h2>
+            <img th:src="@{/templates/wardrobe/style/underwear.jpg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="underwearFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext" id="underwearPopup"><u>UNDERWEAR</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+        <div class="overview">
+            <h2>Utilities</h2>
+            <img th:src="@{/templates/wardrobe/style/shavers.jpg}" alt="Clothes"
+                 style="border-radius: 50%;border: 5px solid #1293EE; width:95%;height:170px;">
+            <div class="popup" onclick="utilitiesFunction()"><h4>Statistical Check</h4>
+                <span class="popuptext" id="utilitiesPopup"><u>UTILITES</u><br/><br/> Recently Added : <br/>Old : <br/>New : <br/>Total : <br/><br/></span>
+                <hr/>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a
+            href="#">CHARLES</a> | <a
+            href="#">MHLANGA</a>
+    </div>
+</div>
+
+<script>
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function shoeFunction() {
+  var popup = document.getElementById("shoePopup");
+  popup.classList.toggle("show");
+}
+
+function jacketFunction() {
+  var popup = document.getElementById("jacketPopup");
+  popup.classList.toggle("show");
+}
+
+function tshirtFunction() {
+  var popup = document.getElementById("tshirtPopup");
+  popup.classList.toggle("show");
+}
+
+function socksFunction() {
+  var popup = document.getElementById("socksPopup");
+  popup.classList.toggle("show");
+}
+
+function jeansFunction() {
+  var popup = document.getElementById("jeansPopup");
+  popup.classList.toggle("show");
+}
+
+function hatsFunction() {
+  var popup = document.getElementById("hatsPopup");
+  popup.classList.toggle("show");
+}
+
+function jerseysFunction() {
+  var popup = document.getElementById("jerseysPopup");
+  popup.classList.toggle("show");
+}
+
+function suitsFunction() {
+  var popup = document.getElementById("suitsPopup");
+  popup.classList.toggle("show");
+}
+
+function nightwearFunction() {
+  var popup = document.getElementById("nightwearPopup");
+  popup.classList.toggle("show");
+}
+
+function underwearFunction() {
+  var popup = document.getElementById("underwearPopup");
+  popup.classList.toggle("show");
+}
+
+function utilitiesFunction() {
+  var popup = document.getElementById("utilitiesPopup");
+  popup.classList.toggle("show");
+}
+
+
+
+</script>
+
+</body>
+</html>

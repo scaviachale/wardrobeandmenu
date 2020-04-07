@@ -3,14 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="master branch">
       <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1da5b20ef3cafe01d9b9cf34dbd84bb7374d66c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43d34f2b7ee4d5e22aca0737097b656d8b5fed5d" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c3a80949a054bc64a7d2b67c0952d25ebc2ec3c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52c69fc9f0170cd58987304937f0759e7bc9078d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63c70db17c724df1152162c2b415ef8a8de48ecd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77c8eb4c8b58a8166e0ad6590725dbd18684d4e3" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8198acc993df358eb02d1ec846af4686a69a6ffc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/877c52d05f9cca06b2c61fc12c103a51ff105262" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/9879cedc5660c3906c484cd856414bed72e7745b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d0c2807dd012a709cd4d322121c9c42c6908dcf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a957346570c7f8f2368c8c5ba87ad183cc690191" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9d2ee12258901d8198422a02ad1f967bdcbcc41" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf99d751422d61e70fbff0d5f673a83303694111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d96a06597e4e65b7585233d9794fef185064cca3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e7d87a759156edf3346315d3e05a9f89d9d827a4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eaa548e5ba4a3d3f6458f9ddacb8da6627cf002d" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/email/EmailType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Inspection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/inspection.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/scaascript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" beforeDir="false" />
@@ -28,9 +43,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/email/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/SMTPAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/email/SMTPAuthenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/service/WardrobeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +58,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -69,11 +84,18 @@
     <property name="SONARLINT_ISSUES_SPLIT_PROPORTION" value="0.52281517" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leaveproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leaves" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="scaa.wardrobe.service" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="scaa.wardrobe.repository" />
+      <recent name="scaa.wardrobe.controller" />
+      <recent name="scaa.wardrobe.service" />
       <recent name="scaa.wardrobe.model.hats" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -276,7 +298,35 @@
       <option name="project" value="LOCAL" />
       <updated>1570620835758</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="master branch">
+      <created>1571142761007</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1571142761007</updated>
+    </task>
+    <task id="LOCAL-00022" summary="master branch">
+      <created>1571405878968</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1571405878968</updated>
+    </task>
+    <task id="LOCAL-00023" summary="master branch">
+      <created>1571406038511</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1571406038511</updated>
+    </task>
+    <task id="LOCAL-00024" summary="master branch">
+      <created>1571998106112</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1571998106112</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

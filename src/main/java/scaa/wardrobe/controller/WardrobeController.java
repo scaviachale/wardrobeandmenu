@@ -89,4 +89,10 @@ public class WardrobeController implements WardrobeControllerInterface {
 
         return "/reports";
     }
+
+    @GetMapping(value = "/saveinspection")
+    public String saveInspection(){
+
+        return "/inspection";
+    }
 }
