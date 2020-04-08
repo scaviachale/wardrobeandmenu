@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="master branch">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/email/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/email/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/Cloth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/Cloth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/WardrobeUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/WardrobeUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/GenerateClothNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/GenerateClothNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/WardrobeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/WardrobeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/category/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/category/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/controller/WardrobeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/controller/WardrobeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/model/WardrobeUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/model/WardrobeUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/repository/WardrobeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/repository/WardrobeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeServiceInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/addnew.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/clothes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/style/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
