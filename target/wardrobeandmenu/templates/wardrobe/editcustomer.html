@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Scavia's Wardrobe</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+    <link th:href="@{/templates/wardrobe/style/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="search">
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text"
+                               style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
+                               name="search_field" placeholder="Enter keywords"/>
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
+                               th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
+                    </p>
+                </form>
+            </div>
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="/wardrobeandmenu/">Scavia's <span class="logo_colour">Wardrobe</span></a></h1>
+                <h2>Simple. Scavia's. Wardrobe Manager.</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="/wardrobeandmenu/">Overview</a></li>
+                <li class="selected"><a href="/wardrobeandmenu/clothes">Clothes</a></li>
+                <li><a href="page.html">Gadgets</a></li>
+                <li><a href="/wardrobeandmenu/todaycombination">What's Up Today</a></li>
+                <li><a href="contact.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="site_content">
+        <div class="sidebar">
+            <br/><br/><br/><br/>
+            <p><img th:src="@{/templates/wardrobe/style/scaa.jpg}" alt="Clothes"
+                    style="border-radius: 50%;border: 5px solid #162129; width:95%;height:170px;"></p>
+            <p></p>
+        </div>
+        <div class="container"></div>
+
+        <div id="content">
+            <h2>Edit Clothing &#128394;.</h2>
+            <form th:action="@{/savecloth}" th:object="${cloth}" method="post">
+                <div class="form_settings">
+                    <!-- ID should be send though to do an update                   -->
+                    <p><span></span><input type="hidden" th:field="*{clothId}" name="ID" value=""/><br/>
+                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{clothId}">Name Error</span>
+                    </p>
+                    <p><span>Name</span><input type="text" th:field="*{name}" name="name" value=""/>
+                        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
+                    </p>
+                    <p><span>Cloth Number</span><input type="text" th:field="*{clothNumber}" name="Cloth Number"
+                                                       value=""/>
+                        <span th:if="${#fields.hasErrors('clothNumber')}" th:errors="*{clothNumber}">Name Error</span>
+                    </p>
+                    <p><span>Type</span><select id="type" name="type" required>
+                        <option value="" selected="selected">Select One</option>
+                        <option th:each="typeOption : ${T(scaa.wardrobe.category.Type).values()}"
+                                th:value="${typeOption}" th:text="${typeOption.value}" th:field="*{type}"></option>
+                        <span th:if="${#fields.hasErrors('type')}" th:errors="*{type}">Type Error</span>
+                    </select></p>
+                    <p><span>Color</span><select id="color" name="color" required>
+                        <option value="" selected="selected">Select One</option>
+                        <option th:each="colorOption : ${T(scaa.wardrobe.category.Color).values()}"
+                                th:value="${colorOption}" th:text="${colorOption.value}" th:field="*{color}"></option>
+                        <span th:if="${#fields.hasErrors('color')}" th:errors="*{color}">Color Error</span>
+                    </select></p>
+                    <p><span>Size</span><select id="size" name="size" required>
+                        <option value="" selected="selected">Select One</option>
+                        <option th:each="sizeOption : ${T(scaa.wardrobe.category.ClothSize).values()}"
+                                th:value="${sizeOption}" th:text="${sizeOption.value}" th:field="*{size}"></option>
+                    </select></p>
+                    <p><span>Status</span><select id="status" name="status" required>
+                        <option value="" selected="selected">Select One</option>
+                        <option th:each="statusOption : ${T(scaa.wardrobe.category.Status).values()}"
+                                th:value="${statusOption}" th:text="${statusOption.value}"
+                                th:field="*{status}"></option>
+                        <span th:if="${#fields.hasErrors('status')}" th:errors="*{status}">Status Error</span>
+                    </select></p>
+                    <p><span>Date received</span><input type="date" name="datereceived" value=""
+                                                        th:field="*{dateReceived}"/>
+                        <span th:if="${#fields.hasErrors('dateReceived')}" th:errors="*{dateReceived}">Date Received Error</span>
+                    </p>
+                    <p><span>Date removed</span><input type="date" name="dateremoved" value=""
+                                                       th:field="*{dateRemoved}"/>
+                        <span th:if="${#fields.hasErrors('dateRemoved')}"
+                              th:errors="*{dateRemoved}">Date Removed Error</span>
+                    </p>
+                    <p><span>Checkbox</span><input class="checkbox" type="checkbox" name="checkbox" value=""/></p>
+                    <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="save"
+                                                                           value="save"/></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a
+        href="#">CHARLES</a> | <a
+        href="#">MHLANGA</a>
+</div>
+</div>
+</body>
+</html>

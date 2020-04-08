@@ -2,50 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="488572b1-34ad-4b41-bd52-635885ec58fc" name="Default Changelist" comment="master branch">
-      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1da5b20ef3cafe01d9b9cf34dbd84bb7374d66c0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43d34f2b7ee4d5e22aca0737097b656d8b5fed5d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c3a80949a054bc64a7d2b67c0952d25ebc2ec3c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52c69fc9f0170cd58987304937f0759e7bc9078d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63c70db17c724df1152162c2b415ef8a8de48ecd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77c8eb4c8b58a8166e0ad6590725dbd18684d4e3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8198acc993df358eb02d1ec846af4686a69a6ffc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/877c52d05f9cca06b2c61fc12c103a51ff105262" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/9879cedc5660c3906c484cd856414bed72e7745b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d0c2807dd012a709cd4d322121c9c42c6908dcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a957346570c7f8f2368c8c5ba87ad183cc690191" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9d2ee12258901d8198422a02ad1f967bdcbcc41" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bf99d751422d61e70fbff0d5f673a83303694111" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d96a06597e4e65b7585233d9794fef185064cca3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e7d87a759156edf3346315d3e05a9f89d9d827a4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/eaa548e5ba4a3d3f6458f9ddacb8da6627cf002d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.apt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/model/Inspection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/inspection.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/scaascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02ed0f7e150093c9da084a35b5b98360054ec756" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/03d586a0eb4f746a9fde246d7ac26eb61c2dd502" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/040f7f0f5c5ea6ae674aea7e4df66115f5e1aa24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5238fdfc2b75a82a47bab6537bb814876adc5f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b5238fdfc2b75a82a47bab6537bb814876adc5f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5234f374a214f0911a40dfc2eedb487c0dde0a01" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5234f374a214f0911a40dfc2eedb487c0dde0a01" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6aa45cd8f2685938502511d55a7833a95926e94d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79803160dfc870af7dffae3ef64979e7e5e18e76" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b7f1d04e3f03decfe1a7f7ef7efb18c9d0e53c6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99938615607c52238352f372e04e7cbbf2f75c4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2f589ab277d10d4c813a03fa5911ba0054b663c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/bee5a8aba47c2310c9f2581d3835ec34152892f1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5be29a69202d6c08c6b1faa4e2d399388de7f0c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9200026379b4d5e880b1efe32b1c7c6a9f4bdbe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/b/ebf66d4d73e464fb151ed7bd20ad9182372fa4a4" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f520d328f91626daf043dedec2a6c5b9b0246db8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scaa/wardrobe/controller/WardrobeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/templates/wardrobe/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/email/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/email/EmailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/Cloth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/Cloth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/WardrobeUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/model/WardrobeUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/GenerateClothNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/GenerateClothNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/WardrobeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/scaa/wardrobe/service/WardrobeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/category/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/category/Color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/controller/WardrobeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/controller/WardrobeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/model/WardrobeUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/model/WardrobeUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/repository/WardrobeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/repository/WardrobeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeServiceInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/WEB-INF/classes/scaa/wardrobe/service/WardrobeServiceInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/addnew.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/addnew.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/clothes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/clothes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/wardrobeandmenu/templates/wardrobe/success.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

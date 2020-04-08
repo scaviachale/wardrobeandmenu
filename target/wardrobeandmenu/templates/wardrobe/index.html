@@ -14,31 +14,40 @@
     <div id="header">
         <div id="logo">
             <div id="search">
-                <form method="post" action="#" id="search_form">
+                <form th:action="@{/search}" method="get" id="search_form">
                     <p>
                         <input class="search" type="text"
                                style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
-                               name="search_field" placeholder="Enter keywords"/>
+                               name="keyword" placeholder="Enter keywords"/>
                         <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
                                th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
                     </p>
                 </form>
             </div>
             <div id="logo_text">
-                <!-- class="logo_colour", allows you to change the colour of the text -->
                 <h1><a href="/wardrobeandmenu/">Scavia's <span class="logo_colour">Wardrobe</span></a></h1>
                 <h2>Simple. Scavia's. Wardrobe Manager.</h2>
             </div>
         </div>
         <div id="menubar">
             <ul id="menu">
-                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
                 <li class="selected"><a href="/wardrobeandmenu/">Overview</a></li>
                 <li><a href="/wardrobeandmenu/clothes">Clothes</a></li>
                 <li><a href="page.html">Gadgets</a></li>
-                <li><a href="another_page.html">What's Up Today</a></li>
-                <li><a href="contact.html">Reports</a></li>
+                <li><a href="/wardrobeandmenu/todaycombination">What's Up Today</a></li>
+                <li><a href="/wardrobeandmenu/reports">Reports</a></li>
+                <li><a href="/wardrobeandmenu/user/add">Users</a></li>
             </ul>
+            <div class="dropdown">
+                <button class="dropbtn"><span style='font-size:30px; color: white;'>&#8801;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Plan Ahead</a>
+                    <a href="#">Favourite</a>
+                    <a href="#">Saved Looks</a>
+                    <a href="/wardrobeandmenu/saveinspection">Inspection</a>
+                </div>
+            </div>
         </div>
     </div>
     <div id="site_content">
@@ -228,8 +237,6 @@ function utilitiesFunction() {
   var popup = document.getElementById("utilitiesPopup");
   popup.classList.toggle("show");
 }
-
-
 
 </script>
 

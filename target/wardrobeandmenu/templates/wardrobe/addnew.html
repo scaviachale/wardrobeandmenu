@@ -36,7 +36,7 @@
                 <li><a href="/wardrobeandmenu/">Overview</a></li>
                 <li class="selected"><a href="/wardrobeandmenu/clothes">Clothes</a></li>
                 <li><a href="page.html">Gadgets</a></li>
-                <li><a href="another_page.html">What's Up Today</a></li>
+                <li><a href="/wardrobeandmenu/todaycombination">What's Up Today</a></li>
                 <li><a href="contact.html">Reports</a></li>
             </ul>
         </div>
@@ -52,27 +52,31 @@
         <div class="container"></div>
 
         <div id="content">
-            <h2>Add Clothing</h2>
+            <h2>Add Clothing &#128084;.</h2>
             <form th:action="@{/savecloth}" th:object="${cloth}" method="post">
                 <div class="form_settings">
                     <p><span>Name</span><input type="text" th:field="*{name}" name="name" value=""/>
                         <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
                     </p>
-                    <p><span>Type</span><select id="type" name="type">
+                    <p><span>Type</span><select id="type" name="type" required>
+                        <option value="" selected="selected">Select One</option>
                         <option th:each="typeOption : ${T(scaa.wardrobe.category.Type).values()}"
                                 th:value="${typeOption}" th:text="${typeOption.value}" th:field="*{type}"></option>
                         <span th:if="${#fields.hasErrors('type')}" th:errors="*{type}">Type Error</span>
                     </select></p>
-                    <p><span>Color</span><select id="color" name="color">
+                    <p><span>Color</span><select id="color" name="color" required>
+                        <option value="" selected="selected">Select One</option>
                         <option th:each="colorOption : ${T(scaa.wardrobe.category.Color).values()}"
                                 th:value="${colorOption}" th:text="${colorOption.value}" th:field="*{color}"></option>
                         <span th:if="${#fields.hasErrors('color')}" th:errors="*{color}">Color Error</span>
                     </select></p>
-                    <p><span>Size</span><select id="size" name="size">
+                    <p><span>Size</span><select id="size" name="size" required>
+                        <option value="" selected="selected">Select One</option>
                         <option th:each="sizeOption : ${T(scaa.wardrobe.category.ClothSize).values()}"
                                 th:value="${sizeOption}" th:text="${sizeOption.value}" th:field="*{size}"></option>
                     </select></p>
-                    <p><span>Status</span><select id="status" name="status">
+                    <p><span>Status</span><select id="status" name="status" required>
+                        <option value="" selected="selected">Select One</option>
                         <option th:each="statusOption : ${T(scaa.wardrobe.category.Status).values()}"
                                 th:value="${statusOption}" th:text="${statusOption.value}"
                                 th:field="*{status}"></option>
@@ -87,7 +91,7 @@
                         <span th:if="${#fields.hasErrors('dateRemoved')}"
                               th:errors="*{dateRemoved}">Date Removed Error</span>
                     </p>
-                    <p><span>Checkbox</span><input class="checkbox" type="checkbox" name="checkbox" value=""/></p>
+                    <p><span>Removed </span><input class="checkbox" type="checkbox" name="checkbox" value=""/></p>
                     <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="save"
                                                                            value="save"/></p>
                 </div>

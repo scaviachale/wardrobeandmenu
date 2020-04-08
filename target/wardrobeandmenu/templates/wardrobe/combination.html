@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Scavia's Wardrobe</title>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+    <link th:href="@{/templates/wardrobe/style/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="search">
+                <form method="post" action="#" id="search_form">
+                    <p>
+                        <input class="search" type="text"
+                               style="border-radius: 10px; border: 5px solid white;width: 250px; height:30px; "
+                               name="search_field" placeholder="Enter keywords"/>
+                        <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;border-bottom: 5;"
+                               th:src="@{/templates/wardrobe/style/search.png}" alt="Search" title="Search"/>
+                    </p>
+                </form>
+            </div>
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="/wardrobeandmenu/">Scavia's <span class="logo_colour">Wardrobe</span></a></h1>
+                <h2>Simple. Scavia's. Wardrobe Manager.</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="/wardrobeandmenu/">Overview</a></li>
+                <li class="selected"><a href="/wardrobeandmenu/clothes">Clothes</a></li>
+                <li><a href="page.html">Gadgets</a></li>
+                <li><a href="/wardrobeandmenu/todaycombination">What's Up Today</a></li>
+                <li><a href="contact.html">Reports</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="site_content">
+        <h1>Handpicked combination &#128076;.</h1>
+        <hr/>
+
+        <div class="card" th:each="cloth : ${combinationWear}">
+            <img th:src="@{/templates/wardrobe/style/rack.jpg}" alt="Wardrobe" style="width:100%">
+            <h1 th:text="${cloth.name}">Text ...</h1>
+            <p class="title" th:text="${cloth.type}">Text ...</p>
+            <p th:text="${cloth.clothNumber}"> Text ... </p>
+            <p th:text="${cloth.color}">Text ...</p>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    Copyright &copy; Scaa | <a href="#">SCAVIA</a> | <a
+        href="#">CHARLES</a> | <a
+        href="#">MHLANGA</a>
+</div>
+</div>
+</body>
+</html>
