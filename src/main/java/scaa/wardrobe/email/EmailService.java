@@ -44,7 +44,7 @@ public class EmailService {
     }
 
     @Transactional
-    public void sendEmail() {
+    public void sendDailyCombinationEmail() {
         Session session = Session.getInstance(emailSetUp(),
                 new SMTPAuthenticator(emailSetUp().getProperty("username"), emailSetUp().getProperty("password")));
 
@@ -54,7 +54,7 @@ public class EmailService {
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(wardrobeUser.getEmail()));
                 message.setSubject(EmailType.NOTIFICATION);
                 message.setText("Hello " + wardrobeUser.getUsername().toUpperCase()
-                        + ", " + EmailType.NOTIFICATION_MESSAGE_BODY);
+                        + ", " + EmailType.UPDATE_MESSAGE_BODY);
 
                 Transport.send(message);
             } catch (MessagingException mex) {
