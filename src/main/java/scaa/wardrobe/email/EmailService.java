@@ -1,6 +1,7 @@
 package scaa.wardrobe.email;
 
 import org.springframework.stereotype.Service;
+import scaa.wardrobe.commons.exception.CouldNotSendMessageException;
 import scaa.wardrobe.model.WardrobeUser;
 
 import javax.mail.Message;
@@ -14,7 +15,7 @@ import java.util.Properties;
 @Service
 public class EmailService {
 
-    public void sendEmail(WardrobeUser wardrobeUser, EmailType emailType) {
+    public void sendEmail(WardrobeUser wardrobeUser) {
         String username = "scaviacmhlanga@gmail.com";
         String password = "rumbiescar11";
         String to = wardrobeUser.getEmail();
@@ -33,15 +34,13 @@ public class EmailService {
         try {
             MimeMessage message = new MimeMessage(session);
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject(emailType.NOTIFICATION);
+            message.setSubject(EmailType.NOTIFICATION);
             message.setText("Hello " + customerName.toUpperCase()
-                    + ", "+ emailType.NOTIFICATION_MESSAGE_BODY);
+                    + ", " + EmailType.NOTIFICATION_MESSAGE_BODY);
 
             Transport.send(message);
-            System.out.println("message sent successfully....");
-
         } catch (MessagingException mex) {
-            throw new RuntimeException(mex);
+            throw new CouldNotSendMessageException("An error occured please contact admin", mex);
         }
 
     }

@@ -6,8 +6,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import scaa.wardrobe.email.EmailService;
 import scaa.wardrobe.model.Cloth;
-import scaa.wardrobe.repository.WardrobeRepository;
-import scaa.wardrobe.repository.WardrobeUserRepository;
 import scaa.wardrobe.service.WardrobeService;
 import scaa.wardrobe.service.WardrobeUserService;
 
