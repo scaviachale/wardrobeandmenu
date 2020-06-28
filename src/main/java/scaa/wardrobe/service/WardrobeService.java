@@ -4,10 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
-import scaa.wardrobe.email.EmailService;
-import scaa.wardrobe.email.EmailType;
 import scaa.wardrobe.model.Cloth;
-import scaa.wardrobe.model.WardrobeUser;
 import scaa.wardrobe.repository.WardrobeRepository;
 
 import java.util.ArrayList;
@@ -29,7 +26,6 @@ public class WardrobeService implements WardrobeServiceInterface {
             cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
         }
         wardrobeRepository.save(cloth);
-        //EmailService.sendEmail(new WardrobeUser(1, "scavia", "scavia@psybergate.co.za", true), new EmailType());
     }
 
     @Override
@@ -55,7 +51,7 @@ public class WardrobeService implements WardrobeServiceInterface {
         Collections.shuffle(bottomwear);
 
         List<Cloth> combination = new ArrayList<>();
-        if (topwear.size() > 0 && bottomwear.size() > 0) {
+        if (!topwear.isEmpty() && !bottomwear.isEmpty()) {
             combination.add(topwear.get(0));
             combination.add(bottomwear.get(0));
         }
