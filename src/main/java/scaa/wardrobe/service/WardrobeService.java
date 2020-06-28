@@ -29,7 +29,7 @@ public class WardrobeService implements WardrobeServiceInterface {
             cloth.setClothNumber(GenerateClothNumber.generateRandomString(6));
         }
         wardrobeRepository.save(cloth);
-        EmailService.sendEmail(new WardrobeUser(1, "scavia", "scavia@psybergate.co.za", true), new EmailType());
+        //EmailService.sendEmail(new WardrobeUser(1, "scavia", "scavia@psybergate.co.za", true), new EmailType());
     }
 
     @Override

@@ -1,5 +1,6 @@
 package scaa.wardrobe.email;
 
+import org.springframework.stereotype.Service;
 import scaa.wardrobe.model.WardrobeUser;
 
 import javax.mail.Message;
@@ -10,9 +11,10 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
+@Service
 public class EmailService {
 
-    public static void sendEmail(WardrobeUser wardrobeUser, EmailType emailType) {
+    public void sendEmail(WardrobeUser wardrobeUser, EmailType emailType) {
         String username = "scaviacmhlanga@gmail.com";
         String password = "rumbiescar11";
         String to = wardrobeUser.getEmail();

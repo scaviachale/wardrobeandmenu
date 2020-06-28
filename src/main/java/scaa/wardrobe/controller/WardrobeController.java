@@ -36,6 +36,7 @@ public class WardrobeController implements WardrobeControllerInterface {
         return new ModelAndView("clothes");
     }
 
+    // TODO add dto
     @PostMapping(value = "/savecloth")
     public String saveClothing(@ModelAttribute("cloth") @Valid Cloth cloth, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
