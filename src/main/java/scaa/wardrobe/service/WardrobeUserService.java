@@ -11,7 +11,7 @@ import java.util.List;
 public class WardrobeUserService implements WardrobeUserServiceInterface {
 
     @Autowired
-    WardrobeUserRepository wardrobeUserRepository;
+    private WardrobeUserRepository wardrobeUserRepository;
 
     @Override
     public void createUser(WardrobeUser wardrobeUser) {

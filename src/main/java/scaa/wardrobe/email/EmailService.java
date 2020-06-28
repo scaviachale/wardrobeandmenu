@@ -54,7 +54,8 @@ public class EmailService {
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(wardrobeUser.getEmail()));
                 message.setSubject(EmailType.NOTIFICATION);
                 message.setText("Hello " + wardrobeUser.getUsername().toUpperCase()
-                        + ", " + EmailType.UPDATE_MESSAGE_BODY);
+                        + ", " + EmailType.UPDATE_MESSAGE_BODY + " "
+                        + wardrobeServiceInterface.getWearCombination().toString());
 
                 Transport.send(message);
             } catch (MessagingException mex) {

@@ -1,6 +1,9 @@
 package scaa.wardrobe.email;
 
 public class EmailType {
+    private EmailType() {
+
+    }
 
     public static final String NOTIFICATION = "NOTIFICATION";
 
