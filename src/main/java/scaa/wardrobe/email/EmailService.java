@@ -1,8 +1,12 @@
 package scaa.wardrobe.email;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import scaa.wardrobe.commons.exception.CouldNotSendMessageException;
 import scaa.wardrobe.model.WardrobeUser;
+import scaa.wardrobe.service.WardrobeServiceInterface;
+import scaa.wardrobe.service.WardrobeUserServiceInterface;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -10,17 +14,22 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.List;
 import java.util.Properties;
 
 @Service
 public class EmailService {
+    @Autowired
+    private WardrobeServiceInterface wardrobeServiceInterface;
 
-    public void sendEmail(WardrobeUser wardrobeUser) {
-        String username = "scaviacmhlanga@gmail.com";
-        String password = "rumbiescar11";
-        String to = wardrobeUser.getEmail();
-        String customerName = wardrobeUser.getUsername();
+    @Autowired
+    private WardrobeUserServiceInterface wardrobeUserServiceInterface;
 
+    private List<WardrobeUser> getEmails() {
+        return wardrobeUserServiceInterface.getUsers();
+    }
+
+    private Properties emailSetUp() {
         Properties prop = new Properties();
         prop.put("mail.smtp.auth", "true");
         prop.put("mail.smtp.starttls.enable", "true");
@@ -28,19 +37,29 @@ public class EmailService {
         prop.put("mail.transport.protocol", "smtp");
         prop.put("mail.smtp.host", "smtp.gmail.com");
         prop.put("mail.smtp.port", "587");
+        prop.put("username", "scaviacmhlanga@gmail.com");
+        prop.put("password", "rumbiescar11");
 
-        Session session = Session.getInstance(prop, new SMTPAuthenticator(username, password));
+        return prop;
+    }
 
-        try {
-            MimeMessage message = new MimeMessage(session);
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-            message.setSubject(EmailType.NOTIFICATION);
-            message.setText("Hello " + customerName.toUpperCase()
-                    + ", " + EmailType.NOTIFICATION_MESSAGE_BODY);
+    @Transactional
+    public void sendEmail() {
+        Session session = Session.getInstance(emailSetUp(),
+                new SMTPAuthenticator(emailSetUp().getProperty("username"), emailSetUp().getProperty("password")));
 
-            Transport.send(message);
-        } catch (MessagingException mex) {
-            throw new CouldNotSendMessageException("An error occured please contact admin", mex);
+        for (WardrobeUser wardrobeUser : getEmails()) {
+            try {
+                MimeMessage message = new MimeMessage(session);
+                message.addRecipient(Message.RecipientType.TO, new InternetAddress(wardrobeUser.getEmail()));
+                message.setSubject(EmailType.NOTIFICATION);
+                message.setText("Hello " + wardrobeUser.getUsername().toUpperCase()
+                        + ", " + EmailType.NOTIFICATION_MESSAGE_BODY);
+
+                Transport.send(message);
+            } catch (MessagingException mex) {
+                throw new CouldNotSendMessageException("An error occured please contact admin", mex);
+            }
         }
 
     }
