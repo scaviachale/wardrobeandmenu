@@ -14,6 +14,7 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Properties;
 
@@ -54,8 +55,12 @@ public class EmailService {
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(wardrobeUser.getEmail()));
                 message.setSubject(EmailType.NOTIFICATION);
                 message.setText("Hello " + wardrobeUser.getUsername().toUpperCase()
-                        + ", " + EmailType.UPDATE_MESSAGE_BODY + " "
-                        + wardrobeServiceInterface.getWearCombination().toString());
+                        + ", " + EmailType.UPDATE_MESSAGE_BODY);
+                message.setText("________________________________________________________");
+                message.setText(wardrobeServiceInterface.getWearCombination().toString());
+                message.setText("________________________________________________________");
+                message.setFrom("WARDROBE-TEAM.");
+                message.setText(LocalDate.now().toString());
 
                 Transport.send(message);
             } catch (MessagingException mex) {
