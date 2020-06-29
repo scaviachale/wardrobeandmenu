@@ -1,34 +1,27 @@
 package scaa.wardrobe.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
-import javax.persistence.*;
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.NotNull;
 
 @Data
 @Accessors(chain = true)
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(of = "id")
-@ToString
-@Entity
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class WardrobeUser {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private long id;
-
-    @Size(min = 5, max = 30)
+    @NotNull
     private String username;
 
-    @NotEmpty
+    @NotNull
     @Email
     private String email;
 
+    @NotNull
     private boolean admin;
 
 }

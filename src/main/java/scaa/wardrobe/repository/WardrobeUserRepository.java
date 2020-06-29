@@ -1,11 +1,11 @@
 package scaa.wardrobe.repository;
 
 import org.springframework.data.repository.CrudRepository;
-import scaa.wardrobe.model.WardrobeUser;
+import scaa.wardrobe.model.WardrobeUserEntity;
 
 import java.util.List;
 
-public interface WardrobeUserRepository extends CrudRepository<WardrobeUser, Long> {
+public interface WardrobeUserRepository extends CrudRepository<WardrobeUserEntity, Long> {
 
-    List<WardrobeUser> findAll();
+    List<WardrobeUserEntity> findAll();
 }

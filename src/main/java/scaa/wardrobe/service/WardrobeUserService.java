@@ -1,8 +1,10 @@
 package scaa.wardrobe.service;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import scaa.wardrobe.model.WardrobeUser;
+import scaa.wardrobe.model.WardrobeUserEntity;
 import scaa.wardrobe.repository.WardrobeUserRepository;
 
 import java.util.List;
@@ -13,13 +15,17 @@ public class WardrobeUserService implements WardrobeUserServiceInterface {
     @Autowired
     private WardrobeUserRepository wardrobeUserRepository;
 
+    @Autowired
+    ModelMapper modelMapper;
+
     @Override
     public void createUser(WardrobeUser wardrobeUser) {
-        wardrobeUserRepository.save(wardrobeUser);
+        final WardrobeUserEntity wardrobeUserEntity = modelMapper.map(wardrobeUser, WardrobeUserEntity.class);
+        wardrobeUserRepository.save(wardrobeUserEntity);
     }
 
     @Override
-    public List<WardrobeUser> getUsers() {
+    public List<WardrobeUserEntity> getUsers() {
         return wardrobeUserRepository.findAll();
     }
 

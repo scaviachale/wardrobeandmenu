@@ -33,7 +33,6 @@ public class WardrobeUserController implements WardrobeUserControllerInterface {
             return "/addnewuser";
         }
         wardrobeUserServiceInterface.createUser(wardrobeUser);
-        System.out.println(wardrobeUser.toString());
         return "/index";
     }
 }

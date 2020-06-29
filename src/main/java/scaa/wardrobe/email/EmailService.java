@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import scaa.wardrobe.commons.exception.CouldNotSendMessageException;
-import scaa.wardrobe.model.WardrobeUser;
+import scaa.wardrobe.model.WardrobeUserEntity;
 import scaa.wardrobe.service.WardrobeServiceInterface;
 import scaa.wardrobe.service.WardrobeUserServiceInterface;
 
@@ -26,7 +26,7 @@ public class EmailService {
     @Autowired
     private WardrobeUserServiceInterface wardrobeUserServiceInterface;
 
-    private List<WardrobeUser> getEmails() {
+    private List<WardrobeUserEntity> getEmails() {
         return wardrobeUserServiceInterface.getUsers();
     }
 
@@ -50,12 +50,12 @@ public class EmailService {
         Session session = Session.getInstance(emailSetUp(),
                 new SMTPAuthenticator(emailSetUp().getProperty("username"), emailSetUp().getProperty("password")));
 
-        for (WardrobeUser wardrobeUser : getEmails()) {
+        for (WardrobeUserEntity wardrobeUserEntity : getEmails()) {
             try {
                 MimeMessage message = new MimeMessage(session);
-                message.addRecipient(Message.RecipientType.TO, new InternetAddress(wardrobeUser.getEmail()));
+                message.addRecipient(Message.RecipientType.TO, new InternetAddress(wardrobeUserEntity.getEmail()));
                 message.setSubject(EmailType.NOTIFICATION);
-                message.setText("Hello " + wardrobeUser.getUsername().toUpperCase()
+                message.setText("Hello " + wardrobeUserEntity.getUsername().toUpperCase()
                         + ", " + EmailType.UPDATE_MESSAGE_BODY);
                 message.setText("________________________________________________________");
                 message.setText(wardrobeServiceInterface.getWearCombination().toString());
