@@ -46,6 +46,7 @@ public class EmailService {
 
     @Transactional
     public void sendDailyCombinationEmail() {
+                System.out.println("emailsendddddd");
         Session session = Session.getInstance(emailSetUp(),
                 new SMTPAuthenticator(emailSetUp().getProperty("username"), emailSetUp().getProperty("password")));
 
@@ -63,6 +64,7 @@ public class EmailService {
                 message.setText(LocalDate.now().toString());
 
                 Transport.send(message);
+                System.out.println("emailsendddddd");
             } catch (MessagingException mex) {
                 throw new CouldNotSendMessageException("An error occured please contact admin", mex);
             }
