@@ -1,11 +1,11 @@
 package scaa.wardrobe.service;
 
-import scaa.wardrobe.model.WardrobeUser;
+import scaa.wardrobe.model.WardrobeUserDTO;
 
 import java.util.List;
 
 public interface WardrobeUserServiceInterface {
-    void createUser(WardrobeUser wardrobeUser);
+    void createUser(WardrobeUserDTO wardrobeUserDTO);
 
     List getUsers();
 }

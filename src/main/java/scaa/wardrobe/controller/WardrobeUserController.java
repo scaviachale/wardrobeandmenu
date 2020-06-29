@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import scaa.wardrobe.model.WardrobeUser;
+import scaa.wardrobe.model.WardrobeUserDTO;
 import scaa.wardrobe.service.WardrobeUserServiceInterface;
 
 import javax.validation.Valid;
@@ -22,17 +22,17 @@ public class WardrobeUserController implements WardrobeUserControllerInterface {
 
     @GetMapping(value = "/add")
     public String addClothing(Model model) {
-        model.addAttribute("user", new WardrobeUser());
+        model.addAttribute("user", new WardrobeUserDTO());
 
         return "/addnewuser";
     }
 
     @PostMapping(value = "/saveuser")
-    public String createUser(@ModelAttribute("user") @Valid WardrobeUser wardrobeUser, BindingResult bindingResult) {
+    public String createUser(@ModelAttribute("user") @Valid WardrobeUserDTO wardrobeUserDTO, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             return "/addnewuser";
         }
-        wardrobeUserServiceInterface.createUser(wardrobeUser);
+        wardrobeUserServiceInterface.createUser(wardrobeUserDTO);
         return "/index";
     }
 }
