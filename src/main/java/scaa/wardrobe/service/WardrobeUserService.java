@@ -8,6 +8,7 @@ import scaa.wardrobe.model.WardrobeUserEntity;
 import scaa.wardrobe.repository.WardrobeUserRepository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class WardrobeUserService implements WardrobeUserServiceInterface {
@@ -25,8 +26,12 @@ public class WardrobeUserService implements WardrobeUserServiceInterface {
     }
 
     @Override
-    public List<WardrobeUserEntity> getUsers() {
-        return wardrobeUserRepository.findAll();
+    public List<WardrobeUserDTO> getUsers() {
+        final List<WardrobeUserEntity> wardrobeUserEntities = wardrobeUserRepository.findAll();
+        return wardrobeUserEntities
+                .stream()
+                .map(wardrobeUserEntity -> modelMapper.map(wardrobeUserEntity, WardrobeUserDTO.class))
+                .collect(Collectors.toList());
     }
 
 }
