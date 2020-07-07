@@ -1,4 +1,4 @@
-package scaa.wardrobe;
+package scaa.wardrobe.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

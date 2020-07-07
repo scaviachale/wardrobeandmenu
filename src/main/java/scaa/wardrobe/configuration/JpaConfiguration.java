@@ -1,4 +1,4 @@
-package scaa.wardrobe;
+package scaa.wardrobe.configuration;
 
 import java.util.Properties;
 

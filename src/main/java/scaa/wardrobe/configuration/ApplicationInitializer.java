@@ -1,6 +1,7 @@
-package scaa.wardrobe;
+package scaa.wardrobe.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import scaa.wardrobe.configuration.ApplicationConfiguration;
 
 public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
